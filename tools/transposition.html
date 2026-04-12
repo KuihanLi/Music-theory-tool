@@ -142,14 +142,31 @@ const KEYS = [
   {name:'F',  acc:1, sym:'♭', rel:'D'},
 ];
 
+// ── Canvas 高清初始化（修复文字模糊）──
 const cv = document.getElementById('cv');
 const ctx = cv.getContext('2d');
-const CX = 150, CY = 150;
+const SIZE = 300;
+const DPR = window.devicePixelRatio || 1;
+cv.width  = SIZE * DPR;
+cv.height = SIZE * DPR;
+cv.style.width  = SIZE + 'px';
+cv.style.height = SIZE + 'px';
+ctx.scale(DPR, DPR);
+
+const CX = SIZE/2, CY = SIZE/2;
 const R_OUT = 138, R_IN = 100, R_MID = 72, R_CENTER = 44;
+
+// outerAngle：外圈顺时针旋转为正值
+// 外圈"1"的初始角度在12点（-π/2），旋转后角度为 outerAngle - π/2
+// 12点对应内圈音名索引0（C），顺时针第i个音名对应索引i
+// 当"1"指向内圈索引i时，主音 = NOTE_NAMES[i]
+// outerAngle 顺时针增大 → "1"顺时针移动 → 对应音名索引增大
+// 因此: rootSemitone = round(outerAngle / (π/6)) mod 12  ✓（去掉负号）
 let outerAngle = 0, dragging = false, lastAngle = 0;
 
 function getRootSemitone() {
-  return ((Math.round(-outerAngle / (Math.PI/6)) % 12) + 12) % 12;
+  // FIX: 去掉原来错误的负号，顺时针旋转 = 主音升高
+  return ((Math.round(outerAngle / (Math.PI/6)) % 12) + 12) % 12;
 }
 function getKeyByRoot(semi) {
   const prefer = {0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B',6:'F#',1:'C#',8:'A♭',3:'E♭',10:'B♭'};
@@ -163,116 +180,186 @@ function getAccDisplay(key) {
 }
 function getScale(semi) { return MAJOR_STEPS.map(s => NOTE_NAMES[(semi + s) % 12]); }
 function getCirclePos(n) {
-  const pos = ['12点（无升降）','7点（1#）','2点（2#）','9点（3#）','4点（4#）','11点（5#）','6点（6#/6♭）','1点（7#）','8点（4♭）','3点（3♭）','10点（2♭）','5点（1♭）'];
+  const pos = ['12点（无升降）','7点（1♯）','2点（2♯）','9点（3♯）','4点（4♯）','11点（5♯）','6点（6♯/6♭）','1点（7♯）','8点（4♭）','3点（3♭）','10点（2♭）','5点（1♭）'];
   return pos[{0:0,7:1,2:2,9:3,4:4,11:5,6:6,1:7,8:8,3:9,10:10,5:11}[n] ?? 0];
 }
 function isDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
 function getTheme() {
   const dark = isDark();
   return {
-    ring1:     dark ? '#222220' : '#f0ede6',
+    ring1:     dark ? '#242422' : '#eeebe3',
     ring2:     dark ? '#1c1c1a' : '#ffffff',
-    stroke:    dark ? 'rgba(255,255,255,0.10)' : 'rgba(0,0,0,0.09)',
-    textPri:   dark ? '#e8e5dc' : '#1a1917',
-    textSec:   dark ? '#9c9890' : '#73706a',
-    accent:    dark ? '#60a5fa' : '#2563eb',
-    accentBg:  dark ? 'rgba(96,165,250,0.18)' : 'rgba(37,99,235,0.12)',
-    solfege:   dark ? '#fbbf24' : '#92400e',
-    solfegeBg: dark ? 'rgba(251,191,36,0.15)' : 'rgba(146,64,14,0.10)',
+    stroke:    dark ? 'rgba(255,255,255,0.12)' : 'rgba(0,0,0,0.11)',
+    textPri:   dark ? '#e8e5dc' : '#181816',
+    textSec:   dark ? '#9c9890' : '#5a5852',
+    accent:    dark ? '#60a5fa' : '#1d4ed8',
+    accentBg:  dark ? 'rgba(96,165,250,0.20)' : 'rgba(29,78,216,0.13)',
+    solfege:   dark ? '#fbbf24' : '#78350f',
+    solfegeBg: dark ? 'rgba(251,191,36,0.18)' : 'rgba(120,53,15,0.11)',
     pointer:   dark ? '#34d399' : '#065f46',
   };
 }
+
 function draw() {
-  ctx.clearRect(0,0,300,300);
+  ctx.clearRect(0, 0, SIZE, SIZE);
   const t = getTheme();
   const root = getRootSemitone();
-  [R_OUT,R_IN,R_CENTER].forEach((r,i) => {
-    ctx.beginPath(); ctx.arc(CX,CY,r,0,Math.PI*2);
-    ctx.fillStyle = i===1 ? t.ring2 : t.ring1; ctx.fill();
+
+  // 填充三个环
+  [R_OUT, R_IN, R_CENTER].forEach((r, i) => {
+    ctx.beginPath(); ctx.arc(CX, CY, r, 0, Math.PI*2);
+    ctx.fillStyle = i === 1 ? t.ring2 : t.ring1; ctx.fill();
   });
-  [R_OUT,R_IN,R_MID,R_CENTER].forEach(r => {
-    ctx.beginPath(); ctx.arc(CX,CY,r,0,Math.PI*2);
+
+  // 环边框
+  [R_OUT, R_IN, R_MID, R_CENTER].forEach(r => {
+    ctx.beginPath(); ctx.arc(CX, CY, r, 0, Math.PI*2);
     ctx.strokeStyle = t.stroke; ctx.lineWidth = 0.8; ctx.stroke();
   });
-  for (let i=0; i<12; i++) {
-    const a = i*Math.PI/6 - Math.PI/2;
-    [[R_IN+2,R_OUT-2],[R_MID+2,R_IN-2]].forEach(([r1,r2]) => {
+
+  // 刻度线（12条，对齐内外圈）
+  for (let i = 0; i < 12; i++) {
+    const a = i * Math.PI/6 - Math.PI/2;
+    [[R_IN+1, R_OUT-1], [R_MID+1, R_IN-1]].forEach(([r1, r2]) => {
       ctx.beginPath();
-      ctx.moveTo(CX+r1*Math.cos(a), CY+r1*Math.sin(a));
-      ctx.lineTo(CX+r2*Math.cos(a), CY+r2*Math.sin(a));
-      ctx.strokeStyle = t.stroke; ctx.lineWidth = 0.8; ctx.stroke();
+      ctx.moveTo(CX + r1*Math.cos(a), CY + r1*Math.sin(a));
+      ctx.lineTo(CX + r2*Math.cos(a), CY + r2*Math.sin(a));
+      ctx.strokeStyle = t.stroke; ctx.lineWidth = 0.7; ctx.stroke();
     });
   }
-  for (let i=0; i<12; i++) {
-    const a = i*Math.PI/6 - Math.PI/2;
-    const r = (R_MID+R_IN)/2;
-    const x = CX+r*Math.cos(a), y = CY+r*Math.sin(a);
-    const note = NOTE_NAMES[i], isRoot = i===root, parts = note.split('/');
-    if (isRoot) { ctx.beginPath(); ctx.arc(x,y,13,0,Math.PI*2); ctx.fillStyle=t.accentBg; ctx.fill(); }
-    ctx.fillStyle = isRoot ? t.accent : t.textPri;
-    ctx.textAlign='center'; ctx.textBaseline='middle';
-    if (parts.length>1) {
-      ctx.font = "400 9.5px 'DM Mono',monospace"; ctx.fillText(parts[0],x,y-5);
+
+  // ── 内圈：12个固定音名 ──
+  for (let i = 0; i < 12; i++) {
+    const a = i * Math.PI/6 - Math.PI/2;
+    const r = (R_MID + R_IN) / 2;
+    const x = CX + r*Math.cos(a), y = CY + r*Math.sin(a);
+    const note = NOTE_NAMES[i], isRoot = (i === root), parts = note.split('/');
+
+    if (isRoot) {
+      ctx.beginPath(); ctx.arc(x, y, 13, 0, Math.PI*2);
+      ctx.fillStyle = t.accentBg; ctx.fill();
+    }
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    if (parts.length > 1) {
+      // 异名音：上下两行
+      ctx.fillStyle = isRoot ? t.accent : t.textPri;
+      ctx.font = `500 11px 'DM Mono',monospace`;
+      ctx.fillText(parts[0], x, y - 5.5);
       ctx.fillStyle = isRoot ? t.accent : t.textSec;
-      ctx.font = "400 8.5px 'DM Mono',monospace"; ctx.fillText(parts[1],x,y+5);
+      ctx.font = `400 9.5px 'DM Mono',monospace`;
+      ctx.fillText(parts[1], x, y + 5.5);
     } else {
-      ctx.font = `${isRoot?'600':'400'} 12px 'DM Sans',sans-serif`; ctx.fillText(note,x,y);
+      ctx.fillStyle = isRoot ? t.accent : t.textPri;
+      ctx.font = `${isRoot ? '700' : '500'} 13px 'DM Sans',sans-serif`;
+      ctx.fillText(note, x, y);
     }
   }
-  for (let si=0; si<7; si++) {
-    const totalAngle = outerAngle + MAJOR_STEPS[si]*Math.PI/6 - Math.PI/2;
-    const r = (R_IN+R_OUT)/2;
-    const x = CX+r*Math.cos(totalAngle), y = CY+r*Math.sin(totalAngle);
-    const isTonic = si===0;
-    if (isTonic) { ctx.beginPath(); ctx.arc(x,y,14,0,Math.PI*2); ctx.fillStyle=t.solfegeBg; ctx.fill(); }
+
+  // ── 外圈：唱名随 outerAngle 旋转 ──
+  for (let si = 0; si < 7; si++) {
+    // "1"从12点出发，MAJOR_STEPS[si] 个半音 = 该唱名在外圈的偏移角度
+    const a = outerAngle + MAJOR_STEPS[si] * Math.PI/6 - Math.PI/2;
+    const r = (R_IN + R_OUT) / 2;
+    const x = CX + r*Math.cos(a), y = CY + r*Math.sin(a);
+    const isTonic = si === 0;
+
+    if (isTonic) {
+      ctx.beginPath(); ctx.arc(x, y, 15, 0, Math.PI*2);
+      ctx.fillStyle = t.solfegeBg; ctx.fill();
+    }
     ctx.fillStyle = isTonic ? t.solfege : t.textPri;
-    ctx.font = `${isTonic?'600':'400'} 13px 'DM Sans',sans-serif`;
-    ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(SOLFEGE[si],x,y);
+    ctx.font = `${isTonic ? '700' : '500'} 14px 'DM Sans',sans-serif`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(SOLFEGE[si], x, y);
   }
+
+  // ── 中心：调名 ──
   const key = getKeyByRoot(root);
-  ctx.fillStyle = t.accent; ctx.font = "600 17px 'Noto Serif SC',serif";
-  ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillText(key.name,CX,CY-8);
-  ctx.fillStyle = t.textSec; ctx.font = "400 10px 'DM Sans',sans-serif"; ctx.fillText('大调',CX,CY+9);
-  ctx.beginPath(); ctx.moveTo(CX,3); ctx.lineTo(CX-5,17); ctx.lineTo(CX+5,17);
-  ctx.closePath(); ctx.fillStyle=t.pointer; ctx.fill();
+  ctx.fillStyle = t.accent;
+  ctx.font = "700 18px 'DM Sans',sans-serif";
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText(key.name, CX, CY - 9);
+  ctx.fillStyle = t.textSec;
+  ctx.font = "400 11px 'DM Sans',sans-serif";
+  ctx.fillText('大调', CX, CY + 10);
+
+
+
   updateInfo(root, key);
 }
+
 function updateInfo(semi, key) {
-  document.getElementById('key-name').textContent = key.name+' 大调';
+  document.getElementById('key-name').textContent = key.name + ' 大调';
   document.getElementById('acc-disp').textContent = getAccDisplay(key);
-  document.getElementById('i-rel').textContent = key.rel+' 小调';
+  document.getElementById('i-rel').textContent = key.rel + ' 小调';
   document.getElementById('i-tonic').textContent = key.name;
   document.getElementById('i-circle').textContent = getCirclePos(semi);
   const scale = getScale(semi);
-  const c = document.getElementById('scale-notes'); c.innerHTML='';
-  scale.forEach((n,i) => {
+  const c = document.getElementById('scale-notes'); c.innerHTML = '';
+  scale.forEach((n, i) => {
     const p = document.createElement('span');
-    p.className = 'note-pill'+(i===0?' root':'');
-    p.textContent = SOLFEGE[i]+' '+n; c.appendChild(p);
+    p.className = 'note-pill' + (i === 0 ? ' root' : '');
+    p.textContent = SOLFEGE[i] + ' ' + n;
+    c.appendChild(p);
   });
 }
+
+// ── 交互：拖动外圈 ──
 const wrap = document.getElementById('dial-wrap');
-function getClientXY(e) { return e.touches?[e.touches[0].clientX,e.touches[0].clientY]:[e.clientX,e.clientY]; }
+
+function getClientXY(e) {
+  return e.touches ? [e.touches[0].clientX, e.touches[0].clientY] : [e.clientX, e.clientY];
+}
 function getAngle(e) {
-  const rect=wrap.getBoundingClientRect();
-  const [px,py]=getClientXY(e);
-  return Math.atan2(py-rect.top-rect.height/2, px-rect.left-rect.width/2);
+  const rect = wrap.getBoundingClientRect();
+  const [px, py] = getClientXY(e);
+  return Math.atan2(py - rect.top - rect.height/2, px - rect.left - rect.width/2);
 }
 function isOuterRing(e) {
-  const rect=wrap.getBoundingClientRect();
-  const [px,py]=getClientXY(e);
-  return Math.hypot(px-rect.left-rect.width/2, py-rect.top-rect.height/2) > R_IN*(rect.width/300);
+  const rect = wrap.getBoundingClientRect();
+  const [px, py] = getClientXY(e);
+  const scale = rect.width / SIZE;
+  const d = Math.hypot(px - rect.left - rect.width/2, py - rect.top - rect.height/2);
+  return d > R_IN * scale && d < (R_OUT + 16) * scale;
 }
-wrap.addEventListener('mousedown', e=>{if(!isOuterRing(e))return;dragging=true;lastAngle=getAngle(e);e.preventDefault();});
-wrap.addEventListener('touchstart', e=>{if(!isOuterRing(e))return;dragging=true;lastAngle=getAngle(e);e.preventDefault();},{passive:false});
-window.addEventListener('mousemove', e=>{if(!dragging)return;const a=getAngle(e),da=Math.atan2(Math.sin(a-lastAngle),Math.cos(a-lastAngle));outerAngle+=da;lastAngle=a;draw();});
-window.addEventListener('touchmove', e=>{if(!dragging)return;const a=getAngle(e),da=Math.atan2(Math.sin(a-lastAngle),Math.cos(a-lastAngle));outerAngle+=da;lastAngle=a;draw();e.preventDefault();},{passive:false});
-function snapToNearest(){outerAngle=Math.round(outerAngle/(Math.PI/6))*(Math.PI/6);draw();}
-window.addEventListener('mouseup',()=>{if(dragging){dragging=false;snapToNearest();}});
-window.addEventListener('touchend',()=>{if(dragging){dragging=false;snapToNearest();}});
-wrap.addEventListener('wheel',e=>{e.preventDefault();outerAngle-=Math.sign(e.deltaY)*Math.PI/6;snapToNearest();},{passive:false});
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+
+wrap.addEventListener('mousedown', e => {
+  if (!isOuterRing(e)) return;
+  dragging = true; lastAngle = getAngle(e); e.preventDefault();
+});
+wrap.addEventListener('touchstart', e => {
+  if (!isOuterRing(e)) return;
+  dragging = true; lastAngle = getAngle(e); e.preventDefault();
+}, {passive: false});
+
+window.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  const a = getAngle(e);
+  const da = Math.atan2(Math.sin(a - lastAngle), Math.cos(a - lastAngle));
+  outerAngle += da; lastAngle = a; draw();
+});
+window.addEventListener('touchmove', e => {
+  if (!dragging) return;
+  const a = getAngle(e);
+  const da = Math.atan2(Math.sin(a - lastAngle), Math.cos(a - lastAngle));
+  outerAngle += da; lastAngle = a; draw(); e.preventDefault();
+}, {passive: false});
+
+function snapToNearest() {
+  outerAngle = Math.round(outerAngle / (Math.PI/6)) * (Math.PI/6);
+  draw();
+}
+window.addEventListener('mouseup',  () => { if (dragging) { dragging = false; snapToNearest(); } });
+window.addEventListener('touchend', () => { if (dragging) { dragging = false; snapToNearest(); } });
+
+// 滚轮：向下滚 = 顺时针 = 升调
+wrap.addEventListener('wheel', e => {
+  e.preventDefault();
+  outerAngle += Math.sign(e.deltaY) * Math.PI/6;
+  snapToNearest();
+}, {passive: false});
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
 draw();
 </script>
 </body>
