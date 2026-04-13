@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "period": "baroque",
+    "label": "巴洛克",
+    "range": [1600, 1749],
+    "version": "1.0",
+    "updated": "2026-04-13"
+  },
+  "events": [
+    {
+      "id": "ME-0019",
+      "year": 1600,
+      "yearEnd": null,
+      "era": "baroque",
+      "region": ["IT"],
+      "tags": ["歌剧", "体裁创新", "戏剧"],
+      "title": "歌剧诞生：《尤丽迪茜》首演",
+      "body": "1600年10月，雅各波·佩里（Jacopo Peri）创作的《尤丽迪茜》在佛罗伦萨美第奇宫廷首演，被视为有完整乐谱留存的最早歌剧。歌剧综合了音乐、诗歌、舞蹈与舞台布景，成为巴洛克时期最重要的音乐体裁，并最终成为西方音乐最具影响力的艺术形式。",
+      "cause": "佛罗伦萨贵族玛丽·德·美第奇与法国国王亨利四世的婚礼庆典，以及卡梅拉塔学者的多年理论积累",
+      "figures": ["Jacopo Peri", "Giulio Caccini"],
+      "works": ["《尤丽迪茜》（Euridice）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/歌剧",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Euridice_(Peri,_Jacopo)"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0020",
+      "year": 1607,
+      "yearEnd": null,
+      "era": "baroque",
+      "region": ["IT"],
+      "tags": ["歌剧", "蒙特威尔第", "奥菲欧"],
+      "title": "蒙特威尔第《奥菲欧》：早期歌剧的里程碑",
+      "body": "克劳迪奥·蒙特威尔第为曼图瓦宫廷创作的歌剧《奥菲欧》（L'Orfeo）在艺术成就上远超早期歌剧，是西方音乐史上第一部真正意义上的伟大歌剧。其管弦乐配器丰富，戏剧表现力强大，将神话题材的情感悲剧推向新高度，确立了歌剧作为严肃艺术的地位。",
+      "cause": "曼图瓦公爵弗朗切斯科·冈萨加委约创作，为宫廷狂欢节庆典准备",
+      "figures": ["Claudio Monteverdi"],
+      "works": ["《奥菲欧》（L'Orfeo）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/奥菲欧_(蒙特威尔第)",
+        "listen": "https://www.youtube.com/results?search_query=Monteverdi+L'Orfeo",
+        "score": "https://imslp.org/wiki/L'Orfeo_(Monteverdi,_Claudio)"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0021",
+      "year": 1637,
+      "yearEnd": null,
+      "era": "baroque",
+      "region": ["IT"],
+      "tags": ["歌剧院", "公众演出", "威尼斯"],
+      "title": "威尼斯开设世界第一座公共歌剧院",
+      "body": "威尼斯的圣卡西亚诺剧院（Teatro San Cassiano）于1637年向公众售票开放，成为世界上第一座商业歌剧院。此前歌剧仅在贵族宫廷内演出，公共歌剧院的出现使歌剧走向大众，催生了以娱乐性见长的威尼斯歌剧传统，深刻改变了音乐的社会功能与产业模式。",
+      "cause": "威尼斯共和国发达的商业经济与市民文化，以及贵族家族对歌剧院商业潜力的看好",
+      "figures": ["Benedetto Ferrari"],
+      "works": [],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/威尼斯歌剧",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0022",
+      "year": 1653,
+      "yearEnd": 1713,
+      "era": "baroque",
+      "region": ["IT"],
+      "tags": ["协奏曲", "奏鸣曲", "小提琴"],
+      "title": "科雷利确立巴洛克器乐奏鸣曲范式",
+      "body": "意大利作曲家阿尔坎杰洛·科雷利（Arcangelo Corelli）系统确立了教堂奏鸣曲（sonata da chiesa）和室内奏鸣曲（sonata da camera）的体裁规范，以及三重奏鸣曲的写作模式，并将小提琴演奏技术提升到新高度。其弦乐合奏协奏曲作品集奠定了大协奏曲（Concerto grosso）的范式。",
+      "cause": "罗马宫廷与教会对器乐音乐的赞助热情，以及意大利小提琴制作工艺（斯特拉迪瓦里等）的飞速进步",
+      "figures": ["Arcangelo Corelli"],
+      "works": ["12首小提琴奏鸣曲 Op.5", "12首大协奏曲 Op.6"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/阿卡安基罗·科雷利",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Arcangelo_Corelli"
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0023",
+      "year": 1678,
+      "yearEnd": 1741,
+      "era": "baroque",
+      "region": ["IT"],
+      "tags": ["协奏曲", "小提琴", "标题音乐"],
+      "title": "维瓦尔第：协奏曲形式的集大成者",
+      "body": "安东尼奥·维瓦尔第（Antonio Vivaldi）一生创作了约500首协奏曲，其中小提琴协奏曲《四季》（Le quattro stagioni，1725）是历史上最著名的标题音乐之一。他确立了快-慢-快三乐章独奏协奏曲的标准形式，这一结构影响了莫扎特、贝多芬直至今日。",
+      "cause": "威尼斯孤儿院（Ospedale della Pietà）对优质音乐教学与演出的稳定需求，以及意大利歌剧和器乐的全欧洲传播",
+      "figures": ["Antonio Vivaldi"],
+      "works": ["《四季》（Le quattro stagioni）", "《和谐的灵感》协奏曲集 Op.3"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/安东尼奥·维瓦尔第",
+        "listen": "https://www.youtube.com/results?search_query=Vivaldi+Four+Seasons",
+        "score": "https://imslp.org/wiki/Antonio_Vivaldi"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0024",
+      "year": 1685,
+      "yearEnd": 1750,
+      "era": "baroque",
+      "region": ["DE"],
+      "tags": ["复调", "对位法", "巴赫", "键盘音乐"],
+      "title": "约翰·塞巴斯蒂安·巴赫：巴洛克音乐集大成者",
+      "body": "巴赫出生于德国音乐世家，历任多地管风琴师与宫廷乐长，终以莱比锡圣托马斯教堂音乐总监身份度过后半生。他将巴洛克复调艺术推向绝对巅峰，两卷《平均律键盘曲集》被誉为钢琴家的\"旧约圣经\"，《赋格的艺术》是对位法的终极探索。他去世的1750年被约定俗成地定为巴洛克时代的终结。",
+      "cause": "德国路德教会对教堂音乐的持续需求，以及巴赫家族深厚的音乐世家传统",
+      "figures": ["Johann Sebastian Bach"],
+      "works": ["《平均律键盘曲集》（BWV 846-893）", "《勃兰登堡协奏曲》（BWV 1046-1051）", "《马太受难曲》（BWV 244）", "《b小调弥撒》（BWV 232）", "《赋格的艺术》（BWV 1080）", "无伴奏小提琴奏鸣曲与组曲（BWV 1001-1006）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/约翰·塞巴斯蒂安·巴赫",
+        "listen": "https://www.youtube.com/results?search_query=Bach+Brandenburg+Concertos",
+        "score": "https://imslp.org/wiki/Johann_Sebastian_Bach"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0025",
+      "year": 1685,
+      "yearEnd": 1759,
+      "era": "baroque",
+      "region": ["DE", "GB"],
+      "tags": ["清唱剧", "歌剧", "亨德尔"],
+      "title": "亨德尔：清唱剧的伟大开创者",
+      "body": "格奥尔格·弗里德里希·亨德尔（George Frideric Handel）与巴赫同年生于德国，但游历甚广，最终定居英国。他早年以意大利歌剧著称，后转向英语清唱剧（Oratorio），其《弥赛亚》（Messiah，1741）是西方音乐史上演出次数最多的大型合唱作品之一。他代表了巴洛克音乐走向公众、走向宏大戏剧效果的另一方向。",
+      "cause": "英国观众对意大利歌剧的冷淡，以及亨德尔对更宏大、更易被英国大众接受的英语宗教剧的商业探索",
+      "figures": ["George Frideric Handel"],
+      "works": ["《弥赛亚》（Messiah）", "《水上音乐》（Water Music）", "《皇家烟火》（Music for the Royal Fireworks）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/格奥尔格·弗里德里希·亨德尔",
+        "listen": "https://www.youtube.com/results?search_query=Handel+Messiah+Hallelujah",
+        "score": "https://imslp.org/wiki/George_Frideric_Handel"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0026",
+      "year": 1722,
+      "yearEnd": null,
+      "era": "baroque",
+      "region": ["FR"],
+      "tags": ["和声理论", "调性", "理论"],
+      "title": "拉莫出版《和声学》：功能和声体系的建立",
+      "body": "法国作曲家让-菲利普·拉莫（Jean-Philippe Rameau）于1722年出版《和声学论》（Traité de l'harmonie），首次系统建立了以根音与转位概念为核心的大小调功能和声体系。这一理论成为西方古典音乐和声学的基础，影响延续至20世纪。",
+      "cause": "巴洛克晚期音乐实践中大小调调性逐渐取代中古调式，迫切需要系统性的理论阐释",
+      "figures": ["Jean-Philippe Rameau"],
+      "works": ["《和声学论》（Traité de l'harmonie，1722）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/让-菲利普·拉莫",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    }
+  ]
+}

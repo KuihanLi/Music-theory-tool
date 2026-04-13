@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "period": "renaissance",
+    "label": "文艺复兴",
+    "range": [1400, 1599],
+    "version": "1.0",
+    "updated": "2026-04-13"
+  },
+  "events": [
+    {
+      "id": "ME-0011",
+      "year": 1430,
+      "yearEnd": 1495,
+      "era": "renaissance",
+      "region": ["NL", "FR", "IT"],
+      "tags": ["佛兰德乐派", "复调", "弥撒曲"],
+      "title": "佛兰德乐派兴起：奥克冈与复杂卡农艺术",
+      "body": "以尼德兰（佛兰德）作曲家为核心的佛兰德乐派（Franco-Flemish School）成为欧洲音乐的主导力量。约翰内斯·奥克冈（Johannes Ockeghem）以极为复杂的卡农技法著称，其《万物生民弥撒》（Missa prolationum）是复调对位的技术顶峰。佛兰德乐派的作曲家被各国宫廷争相聘用，形成欧洲音乐史上第一个真正的国际化风格。",
+      "cause": "勃艮第公国强大的宫廷文化赞助体系与尼德兰经济繁荣",
+      "figures": ["Johannes Ockeghem", "Guillaume Dufay", "Gilles de Bins dit Binchois"],
+      "works": ["Missa prolationum", "Missa Caput"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/佛拉芒乐派",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Johannes_Ockeghem"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0012",
+      "year": 1450,
+      "yearEnd": null,
+      "era": "renaissance",
+      "region": ["DE", "IT"],
+      "tags": ["印刷术", "传播", "技术革新"],
+      "title": "活字印刷术推动乐谱大规模传播",
+      "body": "谷登堡发明金属活字印刷术后，威尼斯印刷商奥塔维亚诺·彼得鲁奇（Ottaviano Petrucci）于1501年出版了第一部印刷乐谱集《和声百曲集》（Harmonice Musices Odhecaton），乐谱印刷业迅速兴起。印刷术使音乐作品能够传播至远离作曲家故土的地方，极大推动了文艺复兴音乐的国际化传播。",
+      "cause": "谷登堡印刷革命的技术外溢，商业资本主义在欧洲城市的扩展",
+      "figures": ["Johannes Gutenberg", "Ottaviano Petrucci"],
+      "works": ["Harmonice Musices Odhecaton（1501）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/奥塔维亚诺·彼得鲁奇",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0013",
+      "year": 1459,
+      "yearEnd": 1521,
+      "era": "renaissance",
+      "region": ["FR", "IT", "NL"],
+      "tags": ["佛兰德乐派", "复调", "世俗音乐"],
+      "title": "若斯坎·德普雷：文艺复兴最伟大的作曲家",
+      "body": "若斯坎·德普雷（Josquin des Prez）被同时代人和后人奉为文艺复兴最杰出的作曲家，其音乐将对位的复杂性与人文主义的情感表达完美结合。他的弥撒曲、经文歌与世俗歌曲（尚松）开创了将音乐与歌词情感密切结合的新风格，对后继者产生了决定性影响。",
+      "cause": "意大利人文主义思潮对音乐情感表达的高度重视，以及各城邦宫廷对顶级音乐人才的竞争",
+      "figures": ["Josquin des Prez"],
+      "works": ["弥撒《武装的人》（Missa L'homme armé）", "经文歌《请怜悯我》（Miserere mei）", "《蟋蟀》（El Grillo）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/若斯坎·德普雷",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Josquin_des_Prez"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0014",
+      "year": 1517,
+      "yearEnd": null,
+      "era": "renaissance",
+      "region": ["DE"],
+      "tags": ["宗教改革", "众赞歌", "新教音乐"],
+      "title": "路德宗教改革：众赞歌与会众参与音乐",
+      "body": "马丁·路德于1517年发起宗教改革，他本人也是音乐爱好者，力主以德语众赞歌（Chorale）取代拉丁文圣咏，让会众直接参与礼拜歌唱。路德改革催生了大量德语宗教歌曲，直接影响了此后两个世纪的德国音乐传统，包括巴赫的大量创作。",
+      "cause": "对罗马教会腐败的强烈批判，以及人文主义对以本国语言传播信仰的重视",
+      "figures": ["Martin Luther", "Johann Walter"],
+      "works": ["《上帝是我们坚固的保障》（Ein feste Burg）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/马丁·路德与音乐",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0015",
+      "year": 1525,
+      "yearEnd": 1594,
+      "era": "renaissance",
+      "region": ["IT", "VA"],
+      "tags": ["复调", "弥撒曲", "宗教音乐"],
+      "title": "帕莱斯特里纳：天主教复调圣乐的顶峰",
+      "body": "罗马作曲家乔万尼·皮耶路易吉·达·帕莱斯特里纳（Giovanni Pierluigi da Palestrina）是天主教反宗教改革的音乐代言人。他的多声部复调弥撒曲和经文歌以声部的清晰、和声的纯净著称，达到文艺复兴复调声乐的最高峰，其《玛尔切鲁斯教皇弥撒》被奉为神圣复调音乐的典范。",
+      "cause": "特伦特公会议（1545-1563）对教会音乐的清洗与整顿，要求歌词清晰可辨",
+      "figures": ["Giovanni Pierluigi da Palestrina"],
+      "works": ["玛尔切鲁斯教皇弥撒（Missa Papae Marcelli）", "《圣母哀歌》（Stabat Mater）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Giovanni_Pierluigi_da_Palestrina"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0016",
+      "year": 1543,
+      "yearEnd": null,
+      "era": "renaissance",
+      "region": ["IT"],
+      "tags": ["鲁特琴", "器乐", "世俗音乐"],
+      "title": "鲁特琴音乐与器乐独立发展",
+      "body": "16世纪中期，鲁特琴（Lute）成为欧洲最流行的独奏乐器，器乐出版物大量涌现，器乐音乐开始从声乐的附庸中独立出来。意大利的里切尔卡（Ricercare）和法国的幻想曲（Fantaisie）是最早的重要纯器乐体裁，为巴洛克器乐的繁荣奠定了基础。",
+      "cause": "乐谱印刷业的成熟使器乐曲得以广泛流传，宫廷娱乐与私人音乐活动的兴盛推动了对器乐的需求",
+      "figures": ["Francesco da Milano", "Adrian Willaert"],
+      "works": ["鲁特琴幻想曲集"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/鲁特琴",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0017",
+      "year": 1567,
+      "yearEnd": 1643,
+      "era": "renaissance",
+      "region": ["IT"],
+      "tags": ["牧歌", "情感表达", "文艺复兴晚期"],
+      "title": "蒙特威尔第：文艺复兴晚期牧歌与歌剧先驱",
+      "body": "克劳迪奥·蒙特威尔第（Claudio Monteverdi）的前五卷牧歌代表文艺复兴晚期最后的辉煌。他大胆运用不协和音与半音化，强调歌词情感的音乐表达，将这种风格称为\"第二常规\"（Seconda prattica）。1607年他创作的歌剧《奥菲欧》标志着新的巴洛克时代的开始。",
+      "cause": "佛罗伦萨卡梅拉塔学者圈对复兴古希腊戏剧音乐传统的强烈兴趣，以及宫廷庆典对综合性音乐戏剧的需求",
+      "figures": ["Claudio Monteverdi"],
+      "works": ["牧歌集（第一至五卷）", "《奥菲欧》（L'Orfeo，1607）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/克劳迪奥·蒙特威尔第",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Claudio_Monteverdi"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0018",
+      "year": 1570,
+      "yearEnd": 1590,
+      "era": "renaissance",
+      "region": ["IT"],
+      "tags": ["歌剧起源", "佛罗伦萨卡梅拉塔", "单声部歌曲"],
+      "title": "佛罗伦萨卡梅拉塔：歌剧诞生前夜",
+      "body": "以温琴佐·伽利莱伊（伽利略之父）和朱利奥·卡奇尼为核心的佛罗伦萨卡梅拉塔学者圈，试图复兴古希腊戏剧音乐，创造出强调旋律与歌词情感表达的单声部歌曲风格（monody），即\"代表性风格\"（stile rappresentativo）。其成果直接催生了1600年前后世界上第一批歌剧。",
+      "cause": "人文主义学者对古希腊戏剧中音乐力量的崇拜，以及对当时复调音乐\"败坏\"歌词清晰性的不满",
+      "figures": ["Vincenzo Galilei", "Giulio Caccini", "Jacopo Peri"],
+      "works": ["《尤丽迪茜》（Euridice，1600）", "《新音乐》（Le Nuove Musiche，1602）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/佛罗伦萨卡梅拉塔",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    }
+  ]
+}

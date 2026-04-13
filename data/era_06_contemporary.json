@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "period": "contemporary",
+    "label": "当代音乐",
+    "range": [1970, 2030],
+    "version": "1.0",
+    "updated": "2026-04-13"
+  },
+  "events": [
+    {
+      "id": "ME-0046",
+      "year": 1970,
+      "yearEnd": 1979,
+      "era": "contemporary",
+      "region": ["DE"],
+      "tags": ["电子音乐", "克拉夫特维克", "合成器", "流行"],
+      "title": "克拉夫特维克：电子流行音乐的开山之作",
+      "body": "德国乐队克拉夫特维克（Kraftwerk）于70年代以纯电子乐器创作出极简主义的机械美学音乐，专辑《Autobahn》（1974）、《Trans-Europe Express》（1977）、《The Man-Machine》（1978）奠定了电子流行乐（Synth-pop）、科技舞曲（Techno）乃至嘻哈音乐的基础，被誉为\"电子音乐教父\"。",
+      "cause": "德国战后文化对美国摇滚乐的刻意回避，以及德国工业现代化背景下对机械美学的迷恋",
+      "figures": ["Ralf Hütter", "Florian Schneider"],
+      "works": ["《Autobahn》（1974）", "《Trans-Europe Express》（1977）", "《The Man-Machine》（1978）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/发电站乐队",
+        "listen": "https://www.youtube.com/results?search_query=Kraftwerk+Autobahn",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0047",
+      "year": 1976,
+      "yearEnd": 1979,
+      "era": "contemporary",
+      "region": ["GB", "US"],
+      "tags": ["朋克", "DIY文化", "摇滚"],
+      "title": "朋克运动：性手枪与反建制摇滚",
+      "body": "1976—1977年，以英国乐队性手枪（Sex Pistols）和冲撞乐队（The Clash）为代表的朋克运动席卷英美，以粗粝的三和弦音乐、激进的反建制态度和DIY（自己动手）文化挑战摇滚商业化。朋克直接催生了后朋克（Post-punk）、新浪潮（New Wave）和独立摇滚（Indie Rock）等流派，重塑了流行音乐的文化生态。",
+      "cause": "70年代英国经济萧条、高失业率与阶级矛盾，以及年轻人对商业化、精英化摇滚乐的强烈反感",
+      "figures": ["Johnny Rotten", "Joe Strummer", "Joey Ramone"],
+      "works": ["《无政府在英国》（Anarchy in the U.K.）", "《白色暴动》（White Riot）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/朋克摇滚",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0048",
+      "year": 1979,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["US"],
+      "tags": ["嘻哈", "说唱", "DJ", "非裔美国人"],
+      "title": "嘻哈音乐诞生：《说唱家乐队》首张单曲",
+      "body": "1979年，糖山帮（Sugarhill Gang）发行单曲《嘻哈万岁》（Rapper's Delight），是嘻哈音乐的第一张商业单曲，使说唱（rap）第一次进入主流公众视野。嘻哈诞生于70年代纽约南布朗克斯区的街头文化，融合了DJ打碟、说唱、霹雳舞与涂鸦艺术，成为20世纪末最具影响力的全球流行文化现象。",
+      "cause": "纽约南布朗克斯区的极度贫困、种族歧视与城市废墟化，以及DJ科尔·赫克（DJ Kool Herc）开创的\"破段\"（breakbeat）DJ技术",
+      "figures": ["DJ Kool Herc", "Grandmaster Flash", "Afrika Bambaataa", "Sugarhill Gang"],
+      "works": ["《嘻哈万岁》（Rapper's Delight，1979）", "《信使》（The Message，1982）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/嘻哈音乐",
+        "listen": "https://www.youtube.com/results?search_query=Rapper's+Delight+Sugarhill+Gang",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0049",
+      "year": 1982,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["JP", "US"],
+      "tags": ["技术革新", "MIDI", "数字音乐", "合成器"],
+      "title": "MIDI协议发布：数字音乐的通用语言",
+      "body": "1982年，乐器数字接口（MIDI，Musical Instrument Digital Interface）协议由多家乐器厂商联合发布，实现了不同电子乐器与计算机之间的互联互通。MIDI彻底改变了音乐制作的方式，使个人计算机成为音乐创作工具，催生了现代数字音乐制作（DAW）产业，是电子音乐与流行音乐生产方式的根本性革命。",
+      "cause": "电子乐器厂商（Roland、Yamaha、Korg等）的竞争迫使行业统一通信标准，以实现乐器互联",
+      "figures": ["Dave Smith", "Ikutaro Kakehashi"],
+      "works": [],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/MIDI",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0050",
+      "year": 1982,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["US"],
+      "tags": ["迈克尔·杰克逊", "流行音乐", "MTV", "专辑"],
+      "title": "《颤栗》专辑：史上最畅销的音乐专辑",
+      "body": "迈克尔·杰克逊（Michael Jackson）于1982年发行专辑《颤栗》（Thriller），最终全球销量超过6600万张，成为史上最畅销的音乐专辑。《颤栗》MV以电影级制作重新定义了音乐录影带的形式，而迈克尔·杰克逊的演出风格（太空步等）深刻影响了此后数十年的流行文化。",
+      "cause": "MTV频道（1981年创立）对视觉化音乐营销的巨大推动，以及迈克尔·杰克逊与制作人昆西·琼斯（Quincy Jones）的完美合作",
+      "figures": ["Michael Jackson", "Quincy Jones"],
+      "works": ["专辑《颤栗》（Thriller）", "《比利·简》（Billie Jean）", "《颤栗》（Thriller MV）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/颤栗_(专辑)",
+        "listen": "https://www.youtube.com/results?search_query=Michael+Jackson+Thriller",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0051",
+      "year": 1991,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["US"],
+      "tags": ["垃圾摇滚", "涅槃乐队", "独立摇滚"],
+      "title": "涅槃乐队《永远的青春》：垃圾摇滚席卷主流",
+      "body": "1991年9月，涅槃乐队（Nirvana）发行专辑《从不介意》（Nevermind），单曲《青春气息》（Smells Like Teen Spirit）迅速席卷全球，将西雅图的垃圾摇滚（Grunge）推入主流市场，终结了80年代华丽金属（Glam Metal）的统治。主唱科特·柯本（Kurt Cobain）的反商业姿态成为整个90年代青年的精神象征。",
+      "cause": "80年代商业化摇滚的空洞与过度精致引发年轻一代的强烈厌倦，西雅图DIY音乐圈的独立精神积累",
+      "figures": ["Kurt Cobain", "Dave Grohl", "Krist Novoselic"],
+      "works": ["专辑《从不介意》（Nevermind）", "《青春气息》（Smells Like Teen Spirit）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/从不介意",
+        "listen": "https://www.youtube.com/results?search_query=Nirvana+Smells+Like+Teen+Spirit",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0052",
+      "year": 1999,
+      "yearEnd": 2001,
+      "era": "contemporary",
+      "region": ["US"],
+      "tags": ["数字化", "Napster", "唱片工业危机", "互联网"],
+      "title": "Napster引爆数字音乐革命与版权危机",
+      "body": "1999年，肖恩·范宁（Shawn Fanning）创建P2P文件共享软件Napster，用户可免费分享MP3音乐文件，峰值用户超8000万。唱片工业通过法律手段于2001年迫使Napster关闭，但数字盗版风潮已不可遏制。Napster彻底瓦解了传统唱片销售模式，直接催生了此后iTunes（2003）和Spotify（2008）等合法数字音乐平台的出现。",
+      "cause": "互联网与MP3压缩格式的普及，青年一代对低廉便捷获取音乐的强烈需求，以及唱片公司对数字化转型的迟滞反应",
+      "figures": ["Shawn Fanning", "Lars Ulrich（Metallica，起诉Napster）"],
+      "works": [],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/Napster",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0053",
+      "year": 2008,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["SE"],
+      "tags": ["流媒体", "Spotify", "数字音乐", "订阅制"],
+      "title": "Spotify上线：流媒体订阅模式重塑音乐产业",
+      "body": "瑞典公司Spotify于2008年正式上线，以\"按需流媒体+订阅制\"彻底颠覆了音乐分发模式，使听众可以合法、即时地访问数千万首曲目。到2020年代，Spotify拥有超过5亿用户，成为全球最大的音乐流媒体平台。流媒体的崛起使单曲和专辑的重要性发生根本转变，也引发了关于版税分配公平性的持续争议。",
+      "cause": "Napster危机后唱片工业对合法数字分发的迫切需求，智能手机的普及，以及宽带互联网的全球覆盖",
+      "figures": ["Daniel Ek", "Martin Lorentzon"],
+      "works": [],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/Spotify",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0054",
+      "year": 2012,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["KR"],
+      "tags": ["K-pop", "全球化", "韩国流行音乐", "YouTube"],
+      "title": "《江南Style》：K-pop走向全球的象征",
+      "body": "2012年，韩国歌手鸟叔（PSY）发行《江南Style》（Gangnam Style），成为YouTube历史上第一个播放量破10亿的视频，引发全球狂欢。这首歌标志着韩国流行音乐（K-pop）走向真正意义上的全球化，也印证了社交媒体时代音乐传播方式的根本性变革。",
+      "cause": "韩国娱乐产业对流媒体与社交媒体的早期布局，YouTube全球化平台的巨大传播力，以及夸张的舞蹈与视觉内容的病毒式传播特性",
+      "figures": ["PSY"],
+      "works": ["《江南Style》（Gangnam Style）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/江南Style",
+        "listen": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0055",
+      "year": 2023,
+      "yearEnd": null,
+      "era": "contemporary",
+      "region": ["US"],
+      "tags": ["人工智能", "AI音乐", "技术革新", "版权"],
+      "title": "AI生成音乐引发产业与版权新争议",
+      "body": "2023年，Suno、Udio等AI音乐生成平台相继上线，用户可通过文字提示生成高质量音乐作品。同年，一首由AI模拟德雷克（Drake）声音创作的歌曲《心》（Heart on My Sleeve）在各大平台病毒式传播，随即遭版权下架，引发了关于AI训练数据版权、声音权利与音乐创作归属的全球性讨论。这是音乐史上又一次由技术颠覆引发的产业革命。",
+      "cause": "大型语言模型与扩散模型（Diffusion Model）技术成熟，以及互联网上海量音乐训练数据的可及性",
+      "figures": ["Mikey Shulman（Suno CEO）"],
+      "works": ["《Heart on My Sleeve》（AI生成，2023）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/人工智能音乐生成",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    }
+  ]
+}

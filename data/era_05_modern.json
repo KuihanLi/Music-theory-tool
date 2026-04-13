@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "period": "modern",
+    "label": "现代音乐",
+    "range": [1900, 1969],
+    "version": "1.0",
+    "updated": "2026-04-13"
+  },
+  "events": [
+    {
+      "id": "ME-0036",
+      "year": 1894,
+      "yearEnd": 1918,
+      "era": "modern",
+      "region": ["FR"],
+      "tags": ["印象主义", "德彪西", "调性拓展"],
+      "title": "德彪西与印象主义音乐：调性的溶解",
+      "body": "克劳德·德彪西（Claude Debussy）以全音音阶、平行和声和模糊调性创造出\"印象主义\"音乐风格，用声音描绘光影、自然与瞬间感受。《牧神午后前奏曲》（1894）标志着20世纪音乐新时代的开端，《月光》《水中倒影》等钢琴曲彻底改变了和声的功能逻辑，是打破调性束缚的重要先驱。",
+      "cause": "印象主义绘画（莫奈、雷诺阿）和象征主义文学对音乐的强烈影响，以及德彪西在1889年巴黎世博会上接触到东南亚甘美兰音乐的震撼",
+      "figures": ["Claude Debussy"],
+      "works": ["《牧神午后前奏曲》（Prélude à l'après-midi d'un faune）", "《海》（La Mer）", "《意象集》（Images）", "《月光》（Clair de lune）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/克劳德·德彪西",
+        "listen": "https://www.youtube.com/results?search_query=Debussy+Clair+de+lune",
+        "score": "https://imslp.org/wiki/Claude_Debussy"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0037",
+      "year": 1913,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["FR", "RU"],
+      "tags": ["现代主义", "斯特拉文斯基", "节奏", "芭蕾"],
+      "title": "《春之祭》首演骚乱：现代音乐的宣言",
+      "body": "1913年5月29日，伊戈尔·斯特拉文斯基（Igor Stravinsky）为佳吉列夫俄罗斯芭蕾舞团创作的《春之祭》（Le Sacre du printemps）在巴黎香榭丽舍剧院首演，以激进的节奏、不协和和声与原始主义风格引发观众骚乱。这次首演被视为20世纪音乐最重要的历史事件，彻底宣告了现代主义音乐的到来。",
+      "cause": "佳吉列夫对前卫艺术的强烈追求，以及斯特拉文斯基对原始主义与俄罗斯民间音乐的独特诠释",
+      "figures": ["Igor Stravinsky", "Sergei Diaghilev", "Vaslav Nijinsky"],
+      "works": ["《春之祭》（Le Sacre du printemps）", "《火鸟》（The Firebird）", "《彼得鲁什卡》（Petrushka）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/春之祭",
+        "listen": "https://www.youtube.com/results?search_query=Stravinsky+Rite+of+Spring",
+        "score": "https://imslp.org/wiki/The_Rite_of_Spring_(Stravinsky,_Igor)"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0038",
+      "year": 1921,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["AT", "DE"],
+      "tags": ["十二音技法", "勋伯格", "无调性", "序列主义"],
+      "title": "勋伯格发明十二音技法：调性的彻底颠覆",
+      "body": "阿诺德·勋伯格（Arnold Schoenberg）于1921年正式发展出十二音技法（twelve-tone technique），将一个八度内的十二个半音以预先设定的序列（音列）组织音乐，彻底摒弃调性功能关系。这一技法开创了序列主义（Serialism）音乐流派，深刻影响了整个20世纪的学院派作曲，是西方音乐史上最激进的革命之一。",
+      "cause": "浪漫晚期（瓦格纳、马勒）半音化和声对调性的极度拉伸，以及勋伯格对新的系统性结构原则的迫切探索",
+      "figures": ["Arnold Schoenberg", "Alban Berg", "Anton Webern"],
+      "works": ["钢琴组曲 Op.25（首批十二音作品）", "小提琴协奏曲 Op.36"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/十二音技法",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Arnold_Schoenberg"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0039",
+      "year": 1900,
+      "yearEnd": 1930,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["爵士乐", "布鲁斯", "新奥尔良", "非裔美国人"],
+      "title": "爵士乐诞生：新奥尔良的音乐革命",
+      "body": "20世纪初，爵士乐在美国南部港口城市新奥尔良诞生，融合了非洲裔美国人的布鲁斯（Blues）传统、拉格泰姆（Ragtime）的切分节奏与欧洲和声，以即兴演奏为核心特征。路易斯·阿姆斯特朗（Louis Armstrong）成为第一位获得国际认可的爵士大师，将爵士乐从街头推向音乐厅。爵士乐是美国对20世纪文化最重要的贡献之一。",
+      "cause": "非裔美国人奴隶解放后在南方的音乐文化积累，新奥尔良独特的法语-西班牙-非洲多元文化交融，以及黑人葬礼铜管乐队传统",
+      "figures": ["Louis Armstrong", "Jelly Roll Morton", "King Oliver"],
+      "works": ["《圣路易斯布鲁斯》", "《西端布鲁斯》"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/爵士乐",
+        "listen": "https://www.youtube.com/results?search_query=Louis+Armstrong+jazz",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0040",
+      "year": 1924,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["爵士乐", "交响乐", "盖希文", "融合"],
+      "title": "《蓝色狂想曲》首演：爵士与古典的历史性融合",
+      "body": "乔治·盖希文（George Gershwin）创作的《蓝色狂想曲》（Rhapsody in Blue）于1924年2月12日首演，由保罗·怀特曼乐队在纽约卡内基音乐厅演出。这部作品将爵士乐语汇带入交响音乐厅，是第一部被主流社会广泛接受的爵士交响乐作品，标志着爵士乐进入严肃音乐领域的重大突破。",
+      "cause": "爵士乐在20年代的迅速崛起，以及白人主流社会对黑人爵士文化的保留态度——保罗·怀特曼希望以更\"体面\"的方式向上层阶级推介爵士乐",
+      "figures": ["George Gershwin", "Paul Whiteman"],
+      "works": ["《蓝色狂想曲》（Rhapsody in Blue）", "《波吉与贝丝》（Porgy and Bess）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/蓝色狂想曲",
+        "listen": "https://www.youtube.com/results?search_query=Gershwin+Rhapsody+in+Blue",
+        "score": "https://imslp.org/wiki/Rhapsody_in_Blue_(Gershwin,_George)"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0041",
+      "year": 1930,
+      "yearEnd": 1945,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["摇摆乐", "大乐队", "爵士乐"],
+      "title": "摇摆乐时代：爵士乐进入美国主流文化",
+      "body": "20世纪30年代，以本尼·古德曼（Benny Goodman）、杜克·艾灵顿（Duke Ellington）、格伦·米勒（Glenn Miller）为代表的大乐队（Big Band）演奏的摇摆乐（Swing）风靡全美，爵士乐正式进入美国主流大众文化。1938年古德曼在卡内基音乐厅的演出是爵士乐历史上具有里程碑意义的时刻。",
+      "cause": "大萧条后美国民众对轻松娱乐的强烈需求，以及无线电广播的普及使爵士乐得以全国传播",
+      "figures": ["Benny Goodman", "Duke Ellington", "Glenn Miller", "Count Basie"],
+      "works": ["《A字列车》（Take the A Train）", "《月光曲》（Moonlight Serenade）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/大乐队",
+        "listen": "https://www.youtube.com/results?search_query=Duke+Ellington+Take+the+A+Train",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0042",
+      "year": 1948,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["技术革新", "LP唱片", "录音工业"],
+      "title": "LP密纹唱片发明：录音工业的重大革命",
+      "body": "哥伦比亚唱片公司于1948年推出33⅓转长时间密纹唱片（LP，Long Play），将单面播放时间从4分钟延长至约22分钟。LP使交响曲、歌剧等大型作品得以完整录制，深刻改变了音乐的消费方式，催生了\"专辑\"（Album）文化，并为20世纪后半叶的摇滚乐时代奠定了媒介基础。",
+      "cause": "二战后美国消费社会的高速发展，以及哥伦比亚唱片工程师彼得·戈尔德马克（Peter Goldmark）的技术突破",
+      "figures": ["Peter Goldmark"],
+      "works": [],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/黑胶唱片",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0043",
+      "year": 1955,
+      "yearEnd": 1970,
+      "era": "modern",
+      "region": ["US", "GB"],
+      "tags": ["摇滚乐", "电吉他", "青年文化"],
+      "title": "摇滚乐诞生：青年反叛文化的音乐革命",
+      "body": "20世纪50年代，摇滚乐（Rock and Roll）从布鲁斯与节奏布鲁斯（R&B）中诞生，以埃尔维斯·普雷斯利（Elvis Presley）为标志性人物走红全美。60年代披头士乐队（The Beatles）引领\"英国入侵\"，鲍勃·迪伦以歌词承载社会批判，伍德斯托克音乐节（1969）成为整整一代人的精神图腾。摇滚乐成为20世纪最具影响力的大众音乐形式。",
+      "cause": "战后婴儿潮催生庞大青年消费群体，冷战时代年轻人对权威的反叛，电吉他与电放大技术的成熟，黑人音乐文化向白人主流市场的突破",
+      "figures": ["Elvis Presley", "Chuck Berry", "The Beatles", "Bob Dylan", "Jimi Hendrix"],
+      "works": ["《约翰尼·B·古德》（Johnny B. Goode）", "《想牵你的手》（I Want to Hold Your Hand）", "《随风飘散》（Blowin' in the Wind）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/摇滚乐",
+        "listen": "https://www.youtube.com/results?search_query=Elvis+Presley+Hound+Dog",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0044",
+      "year": 1952,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["前卫音乐", "偶然音乐", "实验音乐"],
+      "title": "约翰·凯奇《4分33秒》：沉默作为音乐",
+      "body": "美国前卫作曲家约翰·凯奇（John Cage）于1952年创作《4分33秒》——演奏者在钢琴前静坐4分33秒不发出任何乐音，将环境声音作为音乐本身。这件作品彻底颠覆了\"音乐\"的定义，是20世纪先锋艺术最著名也最具争议的宣言，影响涵盖音乐、行为艺术乃至哲学领域。",
+      "cause": "受禅宗思想与达达主义艺术启发，凯奇对西方音乐中作曲家意图的权威性提出根本性质疑",
+      "figures": ["John Cage"],
+      "works": ["《4分33秒》（4'33\"）", "《变化的音乐》（Music of Changes）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/4分33秒",
+        "listen": "https://www.youtube.com/results?search_query=John+Cage+4+33",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0045",
+      "year": 1964,
+      "yearEnd": null,
+      "era": "modern",
+      "region": ["US"],
+      "tags": ["合成器", "电子音乐", "技术革新"],
+      "title": "Moog合成器商业化：电子音乐进入大众",
+      "body": "罗伯特·莫格（Robert Moog）于1964年发布第一台商业化Moog合成器，将电子音色与键盘演奏结合，开创了合成器音乐的新时代。60年代末温蒂·卡洛斯（Wendy Carlos）的专辑《巴赫切换》（Switched-On Bach，1968）证明合成器可以演奏严肃音乐，合成器随后迅速成为流行乐、摇滚乐与电子音乐的核心乐器。",
+      "cause": "晶体管与电路技术进步使电子乐器小型化成为可能，以及实验音乐家对新音色的持续探索",
+      "figures": ["Robert Moog", "Wendy Carlos"],
+      "works": ["《巴赫切换》（Switched-On Bach，1968）"],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/莫格合成器",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    }
+  ]
+}
