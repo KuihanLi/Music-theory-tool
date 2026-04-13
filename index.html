@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -22,7 +22,7 @@
     margin-top: .75rem;
     font-size: .9rem;
     color: var(--text-ter);
-    max-width: 360px;
+    max-width: 420px;
     line-height: 1.7;
   }
   .section-label {
@@ -39,31 +39,32 @@
 <nav class="nav">
   <a class="nav-brand" href="index.html">乐理工具箱</a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">主页</a></li>
+    <li><a href="index.html" class="active">首页</a></li>
     <li><a href="tools/transposition.html">转调</a></li>
+    <li><a href="tools/chord_analysis.html">和弦分析</a></li>
   </ul>
 </nav>
 
 <div class="page">
   <div class="hero">
     <h1>乐理工具箱</h1>
-    <p>一组可交互的乐理可视化工具，帮助理解调性、和声与音程关系。</p>
+    <p>一组可交互的乐理可视化工具，用来理解调性、和弦构成、音程关系与常见记谱方式。</p>
   </div>
 
   <div class="section-label">工具</div>
   <div class="tool-grid">
     <a class="tool-card" href="tools/transposition.html">
-      <div class="tool-card-icon">♩</div>
+      <div class="tool-card-icon">◎</div>
       <div class="tool-card-name">转调可视化</div>
-      <div class="tool-card-desc">同心表盘直观展示调性、唱名与升降号关系</div>
+      <div class="tool-card-desc">用圆盘直观查看主音、唱名、调号与大调音阶之间的对应关系。</div>
+    </a>
+    <a class="tool-card" href="tools/chord_analysis.html">
+      <div class="tool-card-icon">♬</div>
+      <div class="tool-card-name">和弦分析</div>
+      <div class="tool-card-desc">输入和弦标记，查看组成音、音程结构、度数名称与常见别名。</div>
     </a>
     <div class="tool-card" style="opacity:.45; pointer-events:none; cursor:default;">
-      <div class="tool-card-icon">♬</div>
-      <div class="tool-card-name">和弦构成</div>
-      <div class="tool-card-desc">即将推出</div>
-    </div>
-    <div class="tool-card" style="opacity:.45; pointer-events:none; cursor:default;">
-      <div class="tool-card-icon">𝄞</div>
+      <div class="tool-card-icon">△</div>
       <div class="tool-card-name">音程计算</div>
       <div class="tool-card-desc">即将推出</div>
     </div>
