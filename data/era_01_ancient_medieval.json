@@ -2,7 +2,10 @@
   "meta": {
     "period": "ancient_medieval",
     "label": "古代与中世纪",
-    "range": [-3000, 1399],
+    "range": [
+      -3000,
+      1399
+    ],
     "version": "1.0",
     "updated": "2026-04-13"
   },
@@ -12,15 +15,52 @@
       "year": -582,
       "yearEnd": -496,
       "era": "ancient",
-      "region": ["GR"],
-      "tags": ["理论", "哲学", "音阶"],
+      "region": [
+        "GR"
+      ],
+      "tags": [
+        "理论",
+        "哲学",
+        "音阶"
+      ],
       "title": "毕达哥拉斯提出音乐数理理论",
       "body": "古希腊哲学家毕达哥拉斯发现弦长比例与音程的数学关系，将音乐纳入数学范畴，建立了西方音乐理论的最早基础。他提出\"天体音乐\"（musica universalis）概念，认为宇宙运行遵循音乐法则。",
       "cause": "古希腊对自然秩序的数学化探索与宗教神秘主义的结合",
-      "figures": ["Pythagoras"],
+      "figures": [
+        "Pythagoras"
+      ],
       "works": [],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/毕达哥拉斯",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0068",
+      "year": -433,
+      "yearEnd": null,
+      "era": "ancient",
+      "region": [
+        "CN"
+      ],
+      "tags": [
+        "??",
+        "??",
+        "??"
+      ],
+      "title": "??????????????????",
+      "body": "?????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "????????????????????????????????????????",
+      "figures": [
+        "???"
+      ],
+      "works": [
+        "?????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/?????",
         "listen": "",
         "score": ""
       },
@@ -31,13 +71,25 @@
       "year": -400,
       "yearEnd": -320,
       "era": "ancient",
-      "region": ["GR"],
-      "tags": ["理论", "哲学", "调式"],
+      "region": [
+        "GR"
+      ],
+      "tags": [
+        "理论",
+        "哲学",
+        "调式"
+      ],
       "title": "亚里士多德与柏拉图论音乐的道德功用",
       "body": "柏拉图在《理想国》中主张音乐具有塑造品格的道德力量，对不同调式应严加选择；亚里士多德则在《政治学》中讨论音乐的教育与净化（katharsis）功能。两人的论述确立了音乐与伦理的关系，深远影响中世纪音乐观念。",
       "cause": "雅典城邦文化对公民教育的高度重视",
-      "figures": ["Plato", "Aristotle"],
-      "works": ["理想国", "政治学"],
+      "figures": [
+        "Plato",
+        "Aristotle"
+      ],
+      "works": [
+        "理想国",
+        "政治学"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/古希腊音乐",
         "listen": "",
@@ -46,17 +98,86 @@
       "importance": 2
     },
     {
+      "id": "ME-0056",
+      "year": -335,
+      "yearEnd": null,
+      "era": "ancient",
+      "region": [
+        "GR"
+      ],
+      "tags": [
+        "??",
+        "??",
+        "??"
+      ],
+      "title": "?????????????????????????",
+      "body": "????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "??????????????????????????????????????",
+      "figures": [
+        "Aristoxenus"
+      ],
+      "works": [
+        "????????Elements of Harmony?"
+      ],
+      "links": {
+        "wiki": "https://en.wikipedia.org/wiki/Aristoxenus",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0069",
+      "year": 200,
+      "yearEnd": null,
+      "era": "ancient",
+      "region": [
+        "IN"
+      ],
+      "tags": [
+        "??",
+        "??",
+        "??"
+      ],
+      "title": "????????????????????",
+      "body": "???????Natya Shastra?????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "????????????????????????????????????",
+      "figures": [
+        "Bharata Muni"
+      ],
+      "works": [
+        "???????Natya Shastra?"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/????",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
       "id": "ME-0003",
       "year": 590,
       "yearEnd": 604,
       "era": "medieval",
-      "region": ["VA", "IT"],
-      "tags": ["圣咏", "宗教", "礼仪"],
+      "region": [
+        "VA",
+        "IT"
+      ],
+      "tags": [
+        "圣咏",
+        "宗教",
+        "礼仪"
+      ],
       "title": "格列高利一世整理圣咏体系",
       "body": "格列高利教皇（590—604年在位）据传主持收集整理各地基督教圣咏，统一罗马教会礼仪音乐，形成后世所称\"格列高利圣咏\"（Gregorian Chant）。这是单声部、无固定节拍、拉丁文演唱的礼仪歌曲，是西方艺术音乐最重要的源头之一。",
       "cause": "罗马教会致力于统一各地分散的礼仪传统，强化教廷权威",
-      "figures": ["Pope Gregory I"],
-      "works": ["格列高利圣咏集"],
+      "figures": [
+        "Pope Gregory I"
+      ],
+      "works": [
+        "格列高利圣咏集"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/額我略聖歌",
         "listen": "",
@@ -65,16 +186,52 @@
       "importance": 3
     },
     {
+      "id": "ME-0071",
+      "year": 752,
+      "yearEnd": null,
+      "era": "medieval",
+      "region": [
+        "JP"
+      ],
+      "tags": [
+        "????",
+        "??",
+        "??"
+      ],
+      "title": "?????????????????????",
+      "body": "???????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "???????????????????????????????????",
+      "figures": [],
+      "works": [
+        "??"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/??",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
       "id": "ME-0004",
       "year": 800,
       "yearEnd": null,
       "era": "medieval",
-      "region": ["FR", "DE"],
-      "tags": ["复调", "记谱", "教育"],
+      "region": [
+        "FR",
+        "DE"
+      ],
+      "tags": [
+        "复调",
+        "记谱",
+        "教育"
+      ],
       "title": "查理曼推广圣咏与宫廷音乐教育",
       "body": "查理大帝加冕法兰克王国皇帝后，积极推广罗马礼仪圣咏，在各地建立歌唱学校（schola cantorum），促进了西欧音乐文化的统一与传播，为此后复调音乐的发展奠定了制度基础。",
       "cause": "查理曼帝国建设宏大的政治与文化统一工程",
-      "figures": ["Charlemagne"],
+      "figures": [
+        "Charlemagne"
+      ],
       "works": [],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/查理曼",
@@ -88,13 +245,21 @@
       "year": 850,
       "yearEnd": null,
       "era": "medieval",
-      "region": ["FR"],
-      "tags": ["复调", "奥尔加农", "技法"],
+      "region": [
+        "FR"
+      ],
+      "tags": [
+        "复调",
+        "奥尔加农",
+        "技法"
+      ],
       "title": "奥尔加农：西方最早的复调音乐形式出现",
       "body": "约9世纪中叶，西方最早的有记录复调音乐\"奥尔加农\"（Organum）出现，在格列高利圣咏旋律之上或之下增添第二个声部，两个声部以平行四度或五度进行。这是欧洲多声部音乐漫长发展的起点，使西方音乐与东方单音音乐走上截然不同的道路。",
       "cause": "教会音乐家在单声部圣咏基础上进行实验性声部叠加",
       "figures": [],
-      "works": ["音乐手册（Musica Enchiriadis）"],
+      "works": [
+        "音乐手册（Musica Enchiriadis）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/奥尔加农",
         "listen": "",
@@ -103,17 +268,56 @@
       "importance": 3
     },
     {
+      "id": "ME-0070",
+      "year": 950,
+      "yearEnd": null,
+      "era": "medieval",
+      "region": [
+        "IQ"
+      ],
+      "tags": [
+        "??",
+        "?????",
+        "??"
+      ],
+      "title": "??????????????????????",
+      "body": "???????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "??????????????????????????????????????",
+      "figures": [
+        "Al-Farabi"
+      ],
+      "works": [
+        "???????Kitab al-Musiqa al-Kabir?"
+      ],
+      "links": {
+        "wiki": "https://en.wikipedia.org/wiki/Al-Farabi",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
       "id": "ME-0006",
       "year": 1025,
       "yearEnd": null,
       "era": "medieval",
-      "region": ["IT"],
-      "tags": ["记谱", "理论", "唱名"],
+      "region": [
+        "IT"
+      ],
+      "tags": [
+        "记谱",
+        "理论",
+        "唱名"
+      ],
       "title": "圭多·达雷佐发明四线谱与唱名法",
       "body": "意大利僧侣圭多（Guido of Arezzo）发明了现代五线谱的前身——四线谱，并创立了以《圣约翰赞美诗》首字母命名的唱名体系（Ut-Re-Mi-Fa-Sol-La），极大地简化了音乐教学与记谱，是音乐史上最重要的技术革新之一。",
       "cause": "修道院音乐教育对更高效记谱与教学方法的迫切需求",
-      "figures": ["Guido of Arezzo"],
-      "works": ["微音论（Micrologus）"],
+      "figures": [
+        "Guido of Arezzo"
+      ],
+      "works": [
+        "微音论（Micrologus）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/阿雷佐的圭多",
         "listen": "",
@@ -126,15 +330,54 @@
       "year": 1150,
       "yearEnd": 1210,
       "era": "medieval",
-      "region": ["FR"],
-      "tags": ["世俗音乐", "游吟诗人", "骑士"],
+      "region": [
+        "FR"
+      ],
+      "tags": [
+        "世俗音乐",
+        "游吟诗人",
+        "骑士"
+      ],
       "title": "南法游吟诗人（Troubadour）艺术黄金期",
       "body": "南法普罗旺斯地区的游吟诗人（Troubadour）以宫廷爱情为主题，用方言创作并演唱单声部抒情歌曲，代表人物包括纪尧姆九世。北法游唱诗人（Trouvère）随后兴起。这是中世纪最重要的世俗音乐传统，标志着音乐从教会向世俗文化的重要扩展。",
       "cause": "封建骑士制度与宫廷贵族文化催生出以爱情和英雄主义为主题的抒情诗歌传统",
-      "figures": ["Guillaume IX of Aquitaine", "Bernart de Ventadorn"],
+      "figures": [
+        "Guillaume IX of Aquitaine",
+        "Bernart de Ventadorn"
+      ],
       "works": [],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/吟游诗人",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
+      "id": "ME-0057",
+      "year": 1151,
+      "yearEnd": 1179,
+      "era": "medieval",
+      "region": [
+        "DE"
+      ],
+      "tags": [
+        "??",
+        "?????",
+        "????"
+      ],
+      "title": "?????????????????????????",
+      "body": "?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "?????????????????????????????????????",
+      "figures": [
+        "Hildegard von Bingen"
+      ],
+      "works": [
+        "?????????",
+        "?????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/??????????",
         "listen": "",
         "score": ""
       },
@@ -145,13 +388,25 @@
       "year": 1163,
       "yearEnd": 1250,
       "era": "medieval",
-      "region": ["FR"],
-      "tags": ["复调", "经文歌", "巴黎圣母院乐派"],
+      "region": [
+        "FR"
+      ],
+      "tags": [
+        "复调",
+        "经文歌",
+        "巴黎圣母院乐派"
+      ],
       "title": "巴黎圣母院乐派：复调音乐的重大突破",
       "body": "以巴黎圣母院为中心，作曲家列欧宁（Léonin）与佩罗坦（Pérotin）开创了圣母院复调乐派，发展出三声部和四声部的奥尔加农与经文歌（Motet），首次实现了多于两个独立声部的精密对位，奠定了西方复调音乐的核心技法。",
       "cause": "巴黎大教堂建设的宏伟庆典仪式对更宏大、更复杂音乐的需求",
-      "figures": ["Léonin", "Pérotin"],
-      "works": ["Magnus Liber Organi", "Viderunt omnes（四声部奥尔加农）"],
+      "figures": [
+        "Léonin",
+        "Pérotin"
+      ],
+      "works": [
+        "Magnus Liber Organi",
+        "Viderunt omnes（四声部奥尔加农）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/巴黎圣母院乐派",
         "listen": "",
@@ -164,13 +419,24 @@
       "year": 1323,
       "yearEnd": 1377,
       "era": "medieval",
-      "region": ["FR"],
-      "tags": ["新艺术", "世俗音乐", "叙事曲"],
+      "region": [
+        "FR"
+      ],
+      "tags": [
+        "新艺术",
+        "世俗音乐",
+        "叙事曲"
+      ],
       "title": "马肖与法国新艺术（Ars Nova）运动",
       "body": "法国诗人兼作曲家纪尧姆·德·马肖（Guillaume de Machaut）是新艺术时期最重要的代表，其《圣母弥撒》是已知最早由单一作曲家完整创作的弥撒曲。新艺术运动以科学的二分法节奏取代神学三分法，开创了叙事曲、回旋曲等固定曲式的复调写作，将世俗音乐推向与宗教音乐同等重要的地位。",
       "cause": "14世纪教皇权力衰落，世俗人文主义思潮兴起",
-      "figures": ["Guillaume de Machaut"],
-      "works": ["圣母弥撒（Messe de Nostre Dame）", "《我的终结是我的开始》"],
+      "figures": [
+        "Guillaume de Machaut"
+      ],
+      "works": [
+        "圣母弥撒（Messe de Nostre Dame）",
+        "《我的终结是我的开始》"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/纪尧姆·德·马肖",
         "listen": "",
@@ -183,13 +449,23 @@
       "year": 1325,
       "yearEnd": 1397,
       "era": "medieval",
-      "region": ["IT"],
-      "tags": ["新艺术", "意大利", "牧歌"],
+      "region": [
+        "IT"
+      ],
+      "tags": [
+        "新艺术",
+        "意大利",
+        "牧歌"
+      ],
       "title": "兰迪尼与意大利新艺术：牧歌的兴盛",
       "body": "佛罗伦萨盲人管风琴师弗朗切斯科·兰迪尼（Francesco Landini）是意大利新艺术时期最重要的作曲家，以两声部世俗牧歌（Madrigal）和猎歌（Caccia）著称。他发展出独特的装饰性终止式（兰迪尼终止），母语世俗歌曲的繁荣标志着意大利文艺复兴音乐的萌芽。",
       "cause": "意大利北部城邦共和国商业繁荣，世俗贵族和市民阶层文化需求高涨",
-      "figures": ["Francesco Landini"],
-      "works": ["《绿草地》（Verde prato）"],
+      "figures": [
+        "Francesco Landini"
+      ],
+      "works": [
+        "《绿草地》（Verde prato）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/弗朗切斯科·兰迪尼",
         "listen": "",

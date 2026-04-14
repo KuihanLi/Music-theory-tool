@@ -2,71 +2,178 @@
   "meta": {
     "title": "音乐史年表数据集",
     "version": "1.0",
-    "updated": "2026-04-13",
-    "totalEvents": 55,
+    "updated": "2026-04-14",
+    "totalEvents": 88,
     "eras": {
-      "ancient":      { "label": "古代",       "labelEn": "Ancient",      "range": [-3000,  499], "color": "#92400e" },
-      "medieval":     { "label": "中世纪",     "labelEn": "Medieval",     "range": [500,   1399], "color": "#1e40af" },
-      "renaissance":  { "label": "文艺复兴",   "labelEn": "Renaissance",  "range": [1400,  1599], "color": "#065f46" },
-      "baroque":      { "label": "巴洛克",     "labelEn": "Baroque",      "range": [1600,  1749], "color": "#6d28d9" },
-      "classical":    { "label": "古典主义",   "labelEn": "Classical",    "range": [1750,  1819], "color": "#0369a1" },
-      "romantic":     { "label": "浪漫主义",   "labelEn": "Romantic",     "range": [1820,  1899], "color": "#be185d" },
-      "modern":       { "label": "现代",       "labelEn": "Modern",       "range": [1900,  1969], "color": "#b45309" },
-      "contemporary": { "label": "当代",       "labelEn": "Contemporary", "range": [1970,  2030], "color": "#0f766e" }
+      "ancient": {
+        "label": "古代",
+        "labelEn": "Ancient",
+        "range": [
+          -3000,
+          499
+        ],
+        "color": "#92400e"
+      },
+      "medieval": {
+        "label": "中世纪",
+        "labelEn": "Medieval",
+        "range": [
+          500,
+          1399
+        ],
+        "color": "#1e40af"
+      },
+      "renaissance": {
+        "label": "文艺复兴",
+        "labelEn": "Renaissance",
+        "range": [
+          1400,
+          1599
+        ],
+        "color": "#065f46"
+      },
+      "baroque": {
+        "label": "巴洛克",
+        "labelEn": "Baroque",
+        "range": [
+          1600,
+          1749
+        ],
+        "color": "#6d28d9"
+      },
+      "classical": {
+        "label": "古典主义",
+        "labelEn": "Classical",
+        "range": [
+          1750,
+          1819
+        ],
+        "color": "#0369a1"
+      },
+      "romantic": {
+        "label": "浪漫主义",
+        "labelEn": "Romantic",
+        "range": [
+          1820,
+          1899
+        ],
+        "color": "#be185d"
+      },
+      "modern": {
+        "label": "现代",
+        "labelEn": "Modern",
+        "range": [
+          1900,
+          1969
+        ],
+        "color": "#b45309"
+      },
+      "contemporary": {
+        "label": "当代",
+        "labelEn": "Contemporary",
+        "range": [
+          1970,
+          2030
+        ],
+        "color": "#0f766e"
+      }
     },
     "importanceLevels": {
-      "1": { "label": "一般事件",  "description": "有记录价值的音乐史事件" },
-      "2": { "label": "重要事件",  "description": "对音乐发展有显著影响的事件" },
-      "3": { "label": "里程碑",    "description": "音乐史上具有决定性意义的事件" }
+      "1": {
+        "label": "一般事件",
+        "description": "有记录价值的音乐史事件"
+      },
+      "2": {
+        "label": "重要事件",
+        "description": "对音乐发展有显著影响的事件"
+      },
+      "3": {
+        "label": "里程碑",
+        "description": "音乐史上具有决定性意义的事件"
+      }
     },
     "regions": {
-      "AT": "奥地利\", \"DE\": \"德国\", \"FR\": \"法国\", \"GB\": \"英国",
-      "GR": "古希腊\", \"IT\": \"意大利\", \"JP\": \"日本\", \"KR\": \"韩国",
-      "NL": "荷兰/尼德兰\", \"PL\": \"波兰\", \"RU\": \"俄罗斯",
-      "SE": "瑞典\", \"US\": \"美国\", \"VA\": \"梵蒂冈"
+      "AT": "???",
+      "BR": "??",
+      "CN": "??",
+      "CZ": "??",
+      "DE": "??",
+      "ES": "???",
+      "FR": "??",
+      "GB": "??",
+      "GR": "???",
+      "IN": "??",
+      "IQ": "???/?????",
+      "IT": "???",
+      "JP": "??",
+      "KR": "??",
+      "NL": "??",
+      "PL": "??",
+      "RU": "???",
+      "SE": "??",
+      "US": "??",
+      "VA": "???"
     },
     "files": [
       {
         "period": "ancient_medieval",
         "label": "古代与中世纪",
-        "range": [-3000, 1399],
+        "range": [
+          -3000,
+          1399
+        ],
         "file": "era_01_ancient_medieval.json",
-        "eventCount": 10
+        "eventCount": 16
       },
       {
         "period": "renaissance",
         "label": "文艺复兴",
-        "range": [1400, 1599],
+        "range": [
+          1400,
+          1599
+        ],
         "file": "era_02_renaissance.json",
-        "eventCount": 8
+        "eventCount": 12
       },
       {
         "period": "baroque",
         "label": "巴洛克",
-        "range": [1600, 1749],
+        "range": [
+          1600,
+          1749
+        ],
         "file": "era_03_baroque.json",
-        "eventCount": 8
+        "eventCount": 12
       },
       {
         "period": "classical_romantic",
         "label": "古典主义与浪漫主义",
-        "range": [1750, 1899],
+        "range": [
+          1750,
+          1899
+        ],
         "file": "era_04_classical_romantic.json",
-        "eventCount": 9
+        "eventCount": 15
       },
       {
         "period": "modern",
         "label": "现代音乐",
-        "range": [1900, 1969],
+        "range": [
+          1900,
+          1969
+        ],
         "file": "era_05_modern.json",
-        "eventCount": 10
+        "eventCount": 17
       },
       {
         "period": "contemporary",
         "label": "当代音乐",
-        "range": [1970, 2030],
+        "range": [
+          1970,
+          2030
+        ],
         "file": "era_06_contemporary.json",
-        "eventCount": 10
+        "eventCount": 16
       }
     ]
   }

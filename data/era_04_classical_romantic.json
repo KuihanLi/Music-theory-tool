@@ -2,7 +2,10 @@
   "meta": {
     "period": "classical_romantic",
     "label": "古典主义与浪漫主义",
-    "range": [1750, 1899],
+    "range": [
+      1750,
+      1899
+    ],
     "version": "1.0",
     "updated": "2026-04-13"
   },
@@ -12,13 +15,26 @@
       "year": 1750,
       "yearEnd": 1820,
       "era": "classical",
-      "region": ["AT", "DE"],
-      "tags": ["古典主义", "交响曲", "奏鸣曲式"],
+      "region": [
+        "AT",
+        "DE"
+      ],
+      "tags": [
+        "古典主义",
+        "交响曲",
+        "奏鸣曲式"
+      ],
       "title": "古典主义时期：交响曲与奏鸣曲式的确立",
       "body": "1750年后西方音乐进入古典主义时期，以清晰、平衡、理性为美学核心，取代巴洛克的华丽复调。约瑟夫·海顿（Franz Joseph Haydn）系统确立了交响曲的四乐章结构和奏鸣曲式（Sonata form），并发展了弦乐四重奏体裁，被誉为\"交响曲之父\"和\"弦乐四重奏之父\"。器乐音乐在此时期首次超越声乐成为最受欢迎的音乐形式。",
       "cause": "启蒙运动的理性主义与人文主义思潮，市民阶级兴起带来的新音乐消费群体",
-      "figures": ["Franz Joseph Haydn"],
-      "works": ["第94号交响曲《惊愕》", "第104号交响曲《伦敦》", "弦乐四重奏《云雀》Op.64 No.5"],
+      "figures": [
+        "Franz Joseph Haydn"
+      ],
+      "works": [
+        "第94号交响曲《惊愕》",
+        "第104号交响曲《伦敦》",
+        "弦乐四重奏《云雀》Op.64 No.5"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/约瑟夫·海顿",
         "listen": "https://www.youtube.com/results?search_query=Haydn+Symphony+94",
@@ -31,13 +47,29 @@
       "year": 1756,
       "yearEnd": 1791,
       "era": "classical",
-      "region": ["AT"],
-      "tags": ["莫扎特", "协奏曲", "歌剧", "古典主义"],
+      "region": [
+        "AT"
+      ],
+      "tags": [
+        "莫扎特",
+        "协奏曲",
+        "歌剧",
+        "古典主义"
+      ],
       "title": "莫扎特：古典主义的全能天才",
       "body": "沃尔夫冈·阿马德乌斯·莫扎特（Wolfgang Amadeus Mozart）是西方音乐史上最伟大的天才之一，在短暂的35年生命中创作了600余部作品，涵盖所有主要体裁。他将古典主义的形式美与深刻的情感表达完美融合，其钢琴协奏曲确立了现代协奏曲范式，歌剧《费加罗的婚姻》《唐·乔凡尼》《魔笛》是歌剧史上不朽的杰作。",
       "cause": "萨尔茨堡宫廷与维也纳自由市场的音乐环境，以及莫扎特家庭自幼的严格专业训练",
-      "figures": ["Wolfgang Amadeus Mozart"],
-      "works": ["《费加罗的婚姻》（Le nozze di Figaro）", "《唐·乔凡尼》（Don Giovanni）", "《魔笛》（Die Zauberflöte）", "第41号交响曲《朱庇特》", "钢琴协奏曲第20号（KV 466）", "《安魂曲》（KV 626）"],
+      "figures": [
+        "Wolfgang Amadeus Mozart"
+      ],
+      "works": [
+        "《费加罗的婚姻》（Le nozze di Figaro）",
+        "《唐·乔凡尼》（Don Giovanni）",
+        "《魔笛》（Die Zauberflöte）",
+        "第41号交响曲《朱庇特》",
+        "钢琴协奏曲第20号（KV 466）",
+        "《安魂曲》（KV 626）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/沃尔夫冈·阿马德乌斯·莫扎特",
         "listen": "https://www.youtube.com/results?search_query=Mozart+Symphony+40",
@@ -46,17 +78,63 @@
       "importance": 3
     },
     {
+      "id": "ME-0062",
+      "year": 1762,
+      "yearEnd": null,
+      "era": "classical",
+      "region": [
+        "AT",
+        "IT"
+      ],
+      "tags": [
+        "??",
+        "??",
+        "????"
+      ],
+      "title": "???????????????????????",
+      "body": "????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "???????????????????????????????????",
+      "figures": [
+        "Christoph Willibald Gluck"
+      ],
+      "works": [
+        "??????????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/????????",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Orfeo_ed_Euridice_(Gluck,_Christoph_Willibald)"
+      },
+      "importance": 2
+    },
+    {
       "id": "ME-0029",
       "year": 1770,
       "yearEnd": 1827,
       "era": "classical",
-      "region": ["DE", "AT"],
-      "tags": ["贝多芬", "交响曲", "英雄主义", "古典浪漫过渡"],
+      "region": [
+        "DE",
+        "AT"
+      ],
+      "tags": [
+        "贝多芬",
+        "交响曲",
+        "英雄主义",
+        "古典浪漫过渡"
+      ],
       "title": "贝多芬：横跨古典与浪漫的音乐革命者",
       "body": "路德维希·凡·贝多芬（Ludwig van Beethoven）承接海顿、莫扎特的古典主义传统，并以英雄主义风格将交响曲发展为前所未有的宏大规模。《第三交响曲\"英雄\"》（1804）彻底打破交响曲的时间与情感边界；《第九交响曲》（1824）在末乐章引入合唱，是音乐史上最重要的里程碑之一。晚期弦乐四重奏将器乐推向哲学冥想的高度，是古典向浪漫主义过渡的关键桥梁。",
       "cause": "法国大革命与拿破仑时代的英雄主义精神，以及贝多芬自身耳聋带来的内心挣扎与精神升华",
-      "figures": ["Ludwig van Beethoven"],
-      "works": ["第3交响曲《英雄》（Op.55）", "第5交响曲《命运》（Op.67）", "第9交响曲（Op.125）", "《月光奏鸣曲》（Op.27 No.2）", "小提琴协奏曲（Op.61）"],
+      "figures": [
+        "Ludwig van Beethoven"
+      ],
+      "works": [
+        "第3交响曲《英雄》（Op.55）",
+        "第5交响曲《命运》（Op.67）",
+        "第9交响曲（Op.125）",
+        "《月光奏鸣曲》（Op.27 No.2）",
+        "小提琴协奏曲（Op.61）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/路德维希·凡·贝多芬",
         "listen": "https://www.youtube.com/results?search_query=Beethoven+Symphony+9",
@@ -65,17 +143,60 @@
       "importance": 3
     },
     {
+      "id": "ME-0076",
+      "year": 1787,
+      "yearEnd": null,
+      "era": "classical",
+      "region": [
+        "CZ",
+        "AT"
+      ],
+      "tags": [
+        "??",
+        "????",
+        "??"
+      ],
+      "title": "??????????????????????",
+      "body": "???????????????????????????????????????????????????????????????????????18???????????????",
+      "cause": "????????????????????????????????????????",
+      "figures": [
+        "Wolfgang Amadeus Mozart"
+      ],
+      "works": [
+        "????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/??_(???)",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Don_Giovanni,_K.527_(Mozart,_Wolfgang_Amadeus)"
+      },
+      "importance": 2
+    },
+    {
       "id": "ME-0030",
       "year": 1797,
       "yearEnd": 1828,
       "era": "romantic",
-      "region": ["AT"],
-      "tags": ["舒伯特", "艺术歌曲", "浪漫主义"],
+      "region": [
+        "AT"
+      ],
+      "tags": [
+        "舒伯特",
+        "艺术歌曲",
+        "浪漫主义"
+      ],
       "title": "舒伯特与德语艺术歌曲（Lied）的黄金时代",
       "body": "弗朗茨·舒伯特（Franz Schubert）在短暂的31年生命中创作了600余首艺术歌曲（Lied），将诗歌与音乐的结合提升至无与伦比的高度，开创了德语艺术歌曲的黄金传统。《冬之旅》《天鹅之歌》等声乐套曲是浪漫主义最深刻的内心独白，《未完成交响曲》以其独特的抒情性区别于贝多芬的英雄主义风格。",
       "cause": "德国浪漫主义文学运动（歌德、席勒诗歌）对音乐的强烈召唤，以及维也纳自由知识分子沙龙文化的滋养",
-      "figures": ["Franz Schubert"],
-      "works": ["《冬之旅》（Winterreise）", "《魔王》（Erlkönig）", "《未完成交响曲》（D.759）", "《鳟鱼五重奏》（D.667）"],
+      "figures": [
+        "Franz Schubert"
+      ],
+      "works": [
+        "《冬之旅》（Winterreise）",
+        "《魔王》（Erlkönig）",
+        "《未完成交响曲》（D.759）",
+        "《鳟鱼五重奏》（D.667）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/弗朗茨·舒伯特",
         "listen": "https://www.youtube.com/results?search_query=Schubert+Winterreise",
@@ -84,21 +205,33 @@
       "importance": 3
     },
     {
-      "id": "ME-0031",
-      "year": 1829,
+      "id": "ME-0077",
+      "year": 1808,
       "yearEnd": null,
-      "era": "romantic",
-      "region": ["DE"],
-      "tags": ["巴赫复兴", "历史主义", "孟德尔颂"],
-      "title": "孟德尔颂指挥《马太受难曲》：巴赫复兴运动",
-      "body": "1829年，年仅20岁的菲利克斯·孟德尔颂（Felix Mendelssohn）在柏林演唱学院指挥复演巴赫《马太受难曲》，是巴赫去世后该作品的首次公开演出。这一事件引发了席卷欧洲的\"巴赫复兴运动\"，使被遗忘逾半个世纪的巴赫重回音乐史的核心地位，同时开启了音乐史的\"历史主义\"传统。",
-      "cause": "德国浪漫主义民族文化意识觉醒，以及孟德尔颂自幼在家中接触巴赫手稿的个人因缘",
-      "figures": ["Felix Mendelssohn", "Johann Sebastian Bach"],
-      "works": ["《马太受难曲》（BWV 244）复演"],
+      "era": "classical",
+      "region": [
+        "AT"
+      ],
+      "tags": [
+        "???",
+        "???",
+        "???"
+      ],
+      "title": "1808 ???????????????????????",
+      "body": "??????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "??????????????????????????????????????",
+      "figures": [
+        "Ludwig van Beethoven"
+      ],
+      "works": [
+        "???????",
+        "???????",
+        "???????"
+      ],
       "links": {
-        "wiki": "https://zh.wikipedia.org/wiki/菲利克斯·门德尔松",
+        "wiki": "https://en.wikipedia.org/wiki/Beethoven_Academy_of_22_December_1808",
         "listen": "",
-        "score": ""
+        "score": "https://imslp.org/wiki/Category:Beethoven,_Ludwig_van"
       },
       "importance": 3
     },
@@ -107,13 +240,27 @@
       "year": 1810,
       "yearEnd": 1849,
       "era": "romantic",
-      "region": ["PL", "FR"],
-      "tags": ["钢琴音乐", "肖邦", "民族主义"],
+      "region": [
+        "PL",
+        "FR"
+      ],
+      "tags": [
+        "钢琴音乐",
+        "肖邦",
+        "民族主义"
+      ],
       "title": "肖邦：钢琴诗人与波兰民族音乐",
       "body": "弗里德里克·肖邦（Frédéric Chopin）几乎将全部创作集中于钢琴独奏曲，以玛祖卡、波洛奈兹、夜曲、练习曲、叙事曲等体裁将钢琴音乐提升至前所未有的诗意高度。他的音乐将波兰民族音乐元素融入浪漫主义语汇，是19世纪民族主义音乐思潮的重要先驱。",
       "cause": "波兰被列强瓜分的历史悲剧激发了强烈的民族情感，以及巴黎浪漫主义文学艺术圈的深刻影响",
-      "figures": ["Frédéric Chopin"],
-      "works": ["24首前奏曲（Op.28）", "《革命练习曲》（Op.10 No.12）", "《幻想即兴曲》（Op.66）", "波洛奈兹《英雄》（Op.53）"],
+      "figures": [
+        "Frédéric Chopin"
+      ],
+      "works": [
+        "24首前奏曲（Op.28）",
+        "《革命练习曲》（Op.10 No.12）",
+        "《幻想即兴曲》（Op.66）",
+        "波洛奈兹《英雄》（Op.53）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/弗里德里克·肖邦",
         "listen": "https://www.youtube.com/results?search_query=Chopin+Nocturne",
@@ -126,13 +273,27 @@
       "year": 1813,
       "yearEnd": 1883,
       "era": "romantic",
-      "region": ["DE"],
-      "tags": ["瓦格纳", "乐剧", "整体艺术作品", "歌剧改革"],
+      "region": [
+        "DE"
+      ],
+      "tags": [
+        "瓦格纳",
+        "乐剧",
+        "整体艺术作品",
+        "歌剧改革"
+      ],
       "title": "瓦格纳：乐剧与\"整体艺术作品\"革命",
       "body": "理夏德·瓦格纳（Richard Wagner）以\"整体艺术作品\"（Gesamtkunstwerk）理论彻底革新了歌剧形式，将音乐、诗歌、戏剧、视觉艺术融为一体。他发展出\"主导动机\"（Leitmotiv）技法，以无终旋律打破传统分曲结构，《尼伯龙根的指环》四联剧是19世纪最宏大的音乐戏剧工程，为此他专门在拜罗伊特建造了自己的剧院。",
       "cause": "对当时意大利歌剧\"为歌手服务\"的数字型音乐的强烈不满，以及德国浪漫主义哲学（叔本华）对音乐精神地位的高度推崇",
-      "figures": ["Richard Wagner"],
-      "works": ["《尼伯龙根的指环》（Der Ring des Nibelungen）", "《特里斯坦与伊索尔德》（Tristan und Isolde）", "《帕西法尔》（Parsifal）", "《罗恩格林》（Lohengrin）"],
+      "figures": [
+        "Richard Wagner"
+      ],
+      "works": [
+        "《尼伯龙根的指环》（Der Ring des Nibelungen）",
+        "《特里斯坦与伊索尔德》（Tristan und Isolde）",
+        "《帕西法尔》（Parsifal）",
+        "《罗恩格林》（Lohengrin）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/理夏德·瓦格纳",
         "listen": "https://www.youtube.com/results?search_query=Wagner+Ride+of+Valkyries",
@@ -141,17 +302,120 @@
       "importance": 3
     },
     {
+      "id": "ME-0031",
+      "year": 1829,
+      "yearEnd": null,
+      "era": "romantic",
+      "region": [
+        "DE"
+      ],
+      "tags": [
+        "巴赫复兴",
+        "历史主义",
+        "孟德尔颂"
+      ],
+      "title": "孟德尔颂指挥《马太受难曲》：巴赫复兴运动",
+      "body": "1829年，年仅20岁的菲利克斯·孟德尔颂（Felix Mendelssohn）在柏林演唱学院指挥复演巴赫《马太受难曲》，是巴赫去世后该作品的首次公开演出。这一事件引发了席卷欧洲的\"巴赫复兴运动\"，使被遗忘逾半个世纪的巴赫重回音乐史的核心地位，同时开启了音乐史的\"历史主义\"传统。",
+      "cause": "德国浪漫主义民族文化意识觉醒，以及孟德尔颂自幼在家中接触巴赫手稿的个人因缘",
+      "figures": [
+        "Felix Mendelssohn",
+        "Johann Sebastian Bach"
+      ],
+      "works": [
+        "《马太受难曲》（BWV 244）复演"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/菲利克斯·门德尔松",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0063",
+      "year": 1829,
+      "yearEnd": null,
+      "era": "romantic",
+      "region": [
+        "DE"
+      ],
+      "tags": [
+        "????",
+        "????",
+        "???"
+      ],
+      "title": "???????????????????????????",
+      "body": "?????????????????????????????19??????????????????????????????????????????????????????????????????????????????",
+      "cause": "19??????????????????????????????? repertory ??????",
+      "figures": [
+        "Felix Mendelssohn",
+        "Johann Sebastian Bach"
+      ],
+      "works": [
+        "???????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/?????",
+        "listen": "",
+        "score": "https://imslp.org/wiki/St._Matthew_Passion,_BWV_244_(Bach,_Johann_Sebastian)"
+      },
+      "importance": 3
+    },
+    {
+      "id": "ME-0078",
+      "year": 1830,
+      "yearEnd": null,
+      "era": "romantic",
+      "region": [
+        "FR"
+      ],
+      "tags": [
+        "????",
+        "???",
+        "????"
+      ],
+      "title": "??????????????????????",
+      "body": "???????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "?????????????????????????????????????????????",
+      "figures": [
+        "Hector Berlioz"
+      ],
+      "works": [
+        "???????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/?????",
+        "listen": "",
+        "score": "https://imslp.org/wiki/Symphonie_fantastique,_H_48_(Berlioz,_Hector)"
+      },
+      "importance": 3
+    },
+    {
       "id": "ME-0034",
       "year": 1840,
       "yearEnd": 1893,
       "era": "romantic",
-      "region": ["RU"],
-      "tags": ["民族乐派", "柴可夫斯基", "芭蕾舞", "俄罗斯音乐"],
+      "region": [
+        "RU"
+      ],
+      "tags": [
+        "民族乐派",
+        "柴可夫斯基",
+        "芭蕾舞",
+        "俄罗斯音乐"
+      ],
       "title": "柴可夫斯基与俄罗斯民族音乐的国际化",
       "body": "彼得·伊里奇·柴可夫斯基（Pyotr Ilyich Tchaikovsky）是俄罗斯音乐走向世界的最重要使者。他以西欧浪漫主义技法融合俄罗斯民族音乐元素，创作了《天鹅湖》《胡桃夹子》《睡美人》三大芭蕾舞剧，以及《第一钢琴协奏曲》《小提琴协奏曲》等不朽名作，使俄罗斯音乐在国际上赢得崇高地位。",
       "cause": "19世纪俄罗斯民族文化意识的觉醒，以及圣彼得堡帝国芭蕾舞团与音乐学院的强大制度支持",
-      "figures": ["Pyotr Ilyich Tchaikovsky"],
-      "works": ["《天鹅湖》（Swan Lake）", "《胡桃夹子》（The Nutcracker）", "第1钢琴协奏曲（Op.23）", "《1812序曲》（Op.49）"],
+      "figures": [
+        "Pyotr Ilyich Tchaikovsky"
+      ],
+      "works": [
+        "《天鹅湖》（Swan Lake）",
+        "《胡桃夹子》（The Nutcracker）",
+        "第1钢琴协奏曲（Op.23）",
+        "《1812序曲》（Op.49）"
+      ],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/彼得·伊里奇·柴可夫斯基",
         "listen": "https://www.youtube.com/results?search_query=Tchaikovsky+Swan+Lake",
@@ -160,16 +424,53 @@
       "importance": 3
     },
     {
+      "id": "ME-0079",
+      "year": 1876,
+      "yearEnd": null,
+      "era": "romantic",
+      "region": [
+        "DE"
+      ],
+      "tags": [
+        "??",
+        "??",
+        "???"
+      ],
+      "title": "??????????????????????",
+      "body": "???????????????????????????????????????????????????????????????????????????????????????????????????",
+      "cause": "????????????????????????????????????",
+      "figures": [
+        "Richard Wagner"
+      ],
+      "works": [
+        "?????????"
+      ],
+      "links": {
+        "wiki": "https://zh.wikipedia.org/wiki/???????",
+        "listen": "",
+        "score": ""
+      },
+      "importance": 2
+    },
+    {
       "id": "ME-0035",
       "year": 1883,
       "yearEnd": null,
       "era": "romantic",
-      "region": ["US"],
-      "tags": ["技术革新", "录音", "爱迪生"],
+      "region": [
+        "US"
+      ],
+      "tags": [
+        "技术革新",
+        "录音",
+        "爱迪生"
+      ],
       "title": "爱迪生发明留声机：录音技术改变音乐传播",
       "body": "托马斯·爱迪生于1877年发明留声机（phonograph），1883年后商业化留声机开始普及。录音技术的出现彻底改变了音乐的传播方式：音乐首次可以被保存、复制和跨越时空传播，为20世纪唱片工业的诞生奠定了基础，也深刻改变了人类与音乐的关系。",
       "cause": "工业革命后技术进步的惯性，以及爱迪生对实用技术发明的系统性探索",
-      "figures": ["Thomas Edison"],
+      "figures": [
+        "Thomas Edison"
+      ],
       "works": [],
       "links": {
         "wiki": "https://zh.wikipedia.org/wiki/留声机",
