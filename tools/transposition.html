@@ -1,36 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>转调可视化 · 乐理工具箱</title>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../assets/css/app.css">
 <style>
   .dial-wrap{position:relative;width:300px;height:300px;cursor:grab;user-select:none;touch-action:none;margin:0 auto}.dial-wrap:active{cursor:grabbing}canvas{position:absolute;top:0;left:0}
   .key-display{font-family:'Noto Serif SC',serif;font-size:1.6rem;font-weight:600;text-align:center;letter-spacing:.05em}
-  .acc-display{font-family:'DM Mono',monospace;font-size:.88rem;color:var(--text-sec);text-align:center;min-height:1.4em;letter-spacing:.06em}
+  .acc-display{font-family:'IBM Plex Mono',monospace;font-size:.88rem;color:var(--text-sec);text-align:center;min-height:1.4em;letter-spacing:.06em}
   .hint{font-size:.75rem;color:var(--text-ter);text-align:center}
   .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.2rem}
   .info-row{display:flex;flex-direction:column;gap:2px}.info-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-ter)}.info-val{font-size:.9rem;font-weight:500}
   .scale-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-ter);margin-bottom:.5rem}.scale-notes{display:flex;gap:5px;flex-wrap:wrap}
-  .note-pill{font-size:.72rem;font-family:'DM Mono',monospace;padding:2px 8px;border-radius:20px;background:var(--surface2);border:1px solid var(--border);color:var(--text-sec)}.note-pill.root{background:var(--accent-bg);border-color:transparent;color:var(--accent);font-weight:500}
+  .note-pill{font-size:.72rem;font-family:'IBM Plex Mono',monospace;padding:2px 8px;border-radius:20px;background:var(--surface2);border:1px solid var(--border);color:var(--text-sec)}.note-pill.root{background:var(--accent-bg);border-color:transparent;color:var(--accent);font-weight:500}
 </style>
 </head>
 <body>
 <nav class="nav">
   <a class="nav-brand" href="../index.html">乐理工具箱</a>
-  <ul class="nav-links">
-    <li><a href="../index.html">首页</a></li>
-    <li><a href="transposition.html" class="active">转调</a></li>
-    <li><a href="chord_analysis.html">和弦分析</a></li>
-    <li><a href="timeline.html">年表</a></li>
-  </ul>
+  <div class="nav-tools">
+    <ul class="nav-links">
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="transposition.html" class="active">转调</a></li>
+      <li><a href="chord_analysis.html">和弦分析</a></li>
+      <li><a href="timeline.html">年表</a></li>
+    </ul>
+    <div class="theme-switcher" aria-label="配色方案">
+      <button class="theme-btn" type="button" data-theme-choice="slate">雾灰</button>
+      <button class="theme-btn" type="button" data-theme-choice="parchment">纸墨</button>
+      <button class="theme-btn" type="button" data-theme-choice="night">夜蓝</button>
+    </div>
+  </div>
 </nav>
 <div class="page">
   <a class="back-link" href="../index.html">← 返回首页</a>
   <div class="page-header">
     <h1>转调可视化</h1>
-    <p>拖动外圈旋转，或滚动鼠标滚轮切换主音，观察调号、唱名与音阶结构的对应变化。</p>
+    <p>拖动外圈或滚动鼠标滚轮切换主音，观察调号、唱名与大调音阶结构的对应变化。</p>
   </div>
   <div class="card" style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
     <div class="key-display" id="key-name">C 大调</div>
@@ -49,27 +56,7 @@
   </div>
 </div>
 <footer class="footer">乐理工具箱 · 转调可视化</footer>
-<script>
-const NOTE_NAMES=['C','C#/Db','D','D#/Eb','E','F','F#/Gb','G','G#/Ab','A','A#/Bb','B'];
-const SOLFEGE=['1','2','3','4','5','6','7'];
-const MAJOR_STEPS=[0,2,4,5,7,9,11];
-const KEYS=[
-{name:'C',acc:0,sym:'',rel:'A'},{name:'G',acc:1,sym:'#',rel:'E'},{name:'D',acc:2,sym:'#',rel:'B'},{name:'A',acc:3,sym:'#',rel:'F#'},{name:'E',acc:4,sym:'#',rel:'C#'},{name:'B',acc:5,sym:'#',rel:'G#'},{name:'F#',acc:6,sym:'#',rel:'D#'},{name:'C#',acc:7,sym:'#',rel:'A#'},{name:'Ab',acc:4,sym:'b',rel:'F'},{name:'Eb',acc:3,sym:'b',rel:'C'},{name:'Bb',acc:2,sym:'b',rel:'G'},{name:'F',acc:1,sym:'b',rel:'D'}];
-const cv=document.getElementById('cv');const ctx=cv.getContext('2d');const SIZE=300,DPR=window.devicePixelRatio||1;cv.width=SIZE*DPR;cv.height=SIZE*DPR;cv.style.width=SIZE+'px';cv.style.height=SIZE+'px';ctx.scale(DPR,DPR);
-const CX=SIZE/2,CY=SIZE/2,R_OUT=138,R_IN=100,R_MID=72,R_CENTER=44;let outerAngle=0,dragging=false,lastAngle=0;
-function getRootSemitone(){return ((Math.round(outerAngle/(Math.PI/6))%12)+12)%12}
-function getKeyByRoot(semi){const prefer={0:'C',2:'D',4:'E',5:'F',7:'G',9:'A',11:'B',6:'F#',1:'C#',8:'Ab',3:'Eb',10:'Bb'};return KEYS.find(k=>k.name===prefer[semi])||KEYS[0]}
-function getAccDisplay(key){if(key.acc===0)return'无升降号';const order=key.sym==='#'?['F','C','G','D','A','E','B']:['B','E','A','D','G','C','F'];return order.slice(0,key.acc).map(n=>n+key.sym).join('  ')}
-function getScale(semi){return MAJOR_STEPS.map(s=>NOTE_NAMES[(semi+s)%12])}
-function getCirclePos(n){const pos=['12 点（无升降）','7 点（1#）','2 点（2#）','9 点（3#）','4 点（4#）','11 点（5#）','6 点（6# / 6b）','1 点（7#）','8 点（4b）','3 点（3b）','10 点（2b）','5 点（1b）'];return pos[{0:0,7:1,2:2,9:3,4:4,11:5,6:6,1:7,8:8,3:9,10:10,5:11}[n]??0]}
-function isDark(){return window.matchMedia('(prefers-color-scheme: dark)').matches}
-function theme(){const d=isDark();return{ring1:d?'#242422':'#eeebe3',ring2:d?'#1c1c1a':'#ffffff',stroke:d?'rgba(255,255,255,0.12)':'rgba(0,0,0,0.11)',textPri:d?'#e8e5dc':'#181816',textSec:d?'#9c9890':'#5a5852',accent:d?'#60a5fa':'#1d4ed8',accentBg:d?'rgba(96,165,250,0.20)':'rgba(29,78,216,0.13)',solfege:d?'#fbbf24':'#78350f',solfegeBg:d?'rgba(251,191,36,0.18)':'rgba(120,53,15,0.11)'}}
-function draw(){ctx.clearRect(0,0,SIZE,SIZE);const t=theme(),root=getRootSemitone();[R_OUT,R_IN,R_CENTER].forEach((r,i)=>{ctx.beginPath();ctx.arc(CX,CY,r,0,Math.PI*2);ctx.fillStyle=i===1?t.ring2:t.ring1;ctx.fill()});[R_OUT,R_IN,R_MID,R_CENTER].forEach(r=>{ctx.beginPath();ctx.arc(CX,CY,r,0,Math.PI*2);ctx.strokeStyle=t.stroke;ctx.lineWidth=.8;ctx.stroke()});for(let i=0;i<12;i++){const a=i*Math.PI/6-Math.PI/2;[[R_IN+1,R_OUT-1],[R_MID+1,R_IN-1]].forEach(([r1,r2])=>{ctx.beginPath();ctx.moveTo(CX+r1*Math.cos(a),CY+r1*Math.sin(a));ctx.lineTo(CX+r2*Math.cos(a),CY+r2*Math.sin(a));ctx.strokeStyle=t.stroke;ctx.lineWidth=.7;ctx.stroke()})}
-for(let i=0;i<12;i++){const a=i*Math.PI/6-Math.PI/2,r=(R_MID+R_IN)/2,x=CX+r*Math.cos(a),y=CY+r*Math.sin(a),note=NOTE_NAMES[i],isRoot=i===root,parts=note.split('/');if(isRoot){ctx.beginPath();ctx.arc(x,y,13,0,Math.PI*2);ctx.fillStyle=t.accentBg;ctx.fill()}ctx.textAlign='center';ctx.textBaseline='middle';if(parts.length>1){ctx.fillStyle=isRoot?t.accent:t.textPri;ctx.font="500 11px 'DM Mono',monospace";ctx.fillText(parts[0],x,y-5.5);ctx.fillStyle=isRoot?t.accent:t.textSec;ctx.font="400 9.5px 'DM Mono',monospace";ctx.fillText(parts[1],x,y+5.5)}else{ctx.fillStyle=isRoot?t.accent:t.textPri;ctx.font=`${isRoot?'700':'500'} 13px 'DM Sans',sans-serif`;ctx.fillText(note,x,y)}}
-for(let i=0;i<7;i++){const a=outerAngle+MAJOR_STEPS[i]*Math.PI/6-Math.PI/2,r=(R_IN+R_OUT)/2,x=CX+r*Math.cos(a),y=CY+r*Math.sin(a),isTonic=i===0;if(isTonic){ctx.beginPath();ctx.arc(x,y,15,0,Math.PI*2);ctx.fillStyle=t.solfegeBg;ctx.fill()}ctx.fillStyle=isTonic?t.solfege:t.textPri;ctx.font=`${isTonic?'700':'500'} 14px 'DM Sans',sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(SOLFEGE[i],x,y)}const key=getKeyByRoot(root);ctx.fillStyle=t.accent;ctx.font="700 18px 'DM Sans',sans-serif";ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(key.name,CX,CY-9);ctx.fillStyle=t.textSec;ctx.font="400 11px 'DM Sans',sans-serif";ctx.fillText('大调',CX,CY+10);updateInfo(root,key)}
-function updateInfo(semi,key){document.getElementById('key-name').textContent=key.name+' 大调';document.getElementById('acc-disp').textContent=getAccDisplay(key);document.getElementById('i-rel').textContent=key.rel+' 小调';document.getElementById('i-tonic').textContent=key.name;document.getElementById('i-circle').textContent=getCirclePos(semi);const scale=getScale(semi),c=document.getElementById('scale-notes');c.innerHTML='';scale.forEach((n,i)=>{const p=document.createElement('span');p.className='note-pill'+(i===0?' root':'');p.textContent=SOLFEGE[i]+' '+n;c.appendChild(p)})}
-const wrap=document.getElementById('dial-wrap');function clientXY(e){return e.touches?[e.touches[0].clientX,e.touches[0].clientY]:[e.clientX,e.clientY]}function angleOf(e){const rect=wrap.getBoundingClientRect(),[px,py]=clientXY(e);return Math.atan2(py-rect.top-rect.height/2,px-rect.left-rect.width/2)}function isOuterRing(e){const rect=wrap.getBoundingClientRect(),[px,py]=clientXY(e),scale=rect.width/SIZE,d=Math.hypot(px-rect.left-rect.width/2,py-rect.top-rect.height/2);return d>R_IN*scale&&d<(R_OUT+16)*scale}
-wrap.addEventListener('mousedown',e=>{if(!isOuterRing(e))return;dragging=true;lastAngle=angleOf(e);e.preventDefault()});wrap.addEventListener('touchstart',e=>{if(!isOuterRing(e))return;dragging=true;lastAngle=angleOf(e);e.preventDefault()},{passive:false});window.addEventListener('mousemove',e=>{if(!dragging)return;const a=angleOf(e),da=Math.atan2(Math.sin(a-lastAngle),Math.cos(a-lastAngle));outerAngle+=da;lastAngle=a;draw()});window.addEventListener('touchmove',e=>{if(!dragging)return;const a=angleOf(e),da=Math.atan2(Math.sin(a-lastAngle),Math.cos(a-lastAngle));outerAngle+=da;lastAngle=a;draw();e.preventDefault()},{passive:false});function snap(){outerAngle=Math.round(outerAngle/(Math.PI/6))*(Math.PI/6);draw()}window.addEventListener('mouseup',()=>{if(dragging){dragging=false;snap()}});window.addEventListener('touchend',()=>{if(dragging){dragging=false;snap()}});wrap.addEventListener('wheel',e=>{e.preventDefault();outerAngle+=Math.sign(e.deltaY)*(Math.PI/6);snap()},{passive:false});window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);draw();
-</script>
+<script src="../assets/js/transposition.js"></script>
+<script src="../assets/js/theme.js"></script>
 </body>
 </html>
